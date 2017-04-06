@@ -1,0 +1,60 @@
+$pale-grey: #f5fafa;
+$white: #ffffff;
+$marigold: #ffc107;
+$bluey-purple: #673ab7;
+$azure: #2196f3;
+$booger: #8bc34a;
+$black: #1a1a1a;
+$off-white: #fff8e1;
+$white-two: #f7f7f7;
+$white-three: #e6e6e6;
+$white-four: #f2f2f2;
+$light-grey: #e3e6df;
+$white-five: #d9d9d9;
+$white-six: #e5e5e5;
+$pale-grey-two: #eff5f5;
+$warm-grey: #808080;
+$lightblue: #64b5f6;
+$wheat: #ffe082;
+$amethyst: #9575cd;
+$black-two: #000000;
+$dodger-blue: #44a6f5;
+$dodger-blue-two: #48a8f5;
+$azure-light: #42A5F5;
+$booger-light: #9CCC65;
+
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Proxima Nova';
+	font-size: 14px;
+}
+.container{
+	margin: 0 auto;
+	width: 1200px;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+button, input{
+	cursor: pointer;
+	outline: none;
+}
+.clearfix:after, .clearfix:before{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}

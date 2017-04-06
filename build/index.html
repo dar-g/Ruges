@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1920px">
+	<title>Интернет-магазин «Ругес» - Главная</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="../build/assets/css/styles.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="upper-header">
+				<div class="container">
+					<ul class="upper-header-tel-list">
+						<li class="upper-header-tel-item">
+							<p class="upper-header-tel-item__p">
+								Розничным покупателям:
+							</p>
+							<a class="upper-header-tel-item__link" href="tel:84952803840">
+								8 (495) 280-38-40
+							</a>
+						</li>
+						<li class="upper-header-tel-item">
+							<p class="upper-header-tel-item__p">
+								Оптовым покупателям:
+							</p>
+							<a class="upper-header-tel-item__link" href="tel:89266291134">
+								8 (926) 629-11-34
+							</a>
+						</li>
+						<li class="upper-header-tel-item">
+							<a class="upper-header-tel-item__link call-me">
+								Перезвоните мне
+							</a>
+						</li>
+					</ul>
+					<div class="login">
+						<a href="#" class="login-link">
+							<span class="login-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="15">
+									<path fill-rule="evenodd" fill="#D9D9D9" d="M10.698 10.721L8.206 9.527a.654.654 0 0 1-.381-.591v-.845a5.644 5.644 0 0 0 .958-1.688.99.99 0 0 0 .607-.904v-1a.976.976 0 0 0-.26-.656v-1.33c.014-.138.071-.956-.546-1.631-.536-.586-1.405-.883-2.585-.883-1.179 0-2.049.297-2.585.882-.617.676-.56 1.494-.545 1.632v1.33a.967.967 0 0 0-.261.656v1c0 .304.144.588.39.777.239.907.739 1.59.914 1.809v.827a.655.655 0 0 1-.359.58l-2.328 1.217c-.756.396-1.226 1.154-1.226 1.98v.81c0 1.186 3.925 1.5 6 1.5 2.076 0 6-.314 6-1.5v-.761c0-.86-.498-1.632-1.301-2.017z"/>
+								</svg>
+							</span>
+							Войти в личный кабинет
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="middle-header">
+				<div class="container">
+					<div class="location">
+						<p class="location__p">
+							Ваш город:
+						</p>
+						<a href="" class="location-link">
+							Киев
+						</a>
+						<div class="location__yes-no">
+							<div class="location__yes-no-triangle"></div>
+							<form class="location__yes-no-form">
+								<button class="location__yes">
+									Да
+								</button>
+								<button class="location__no">
+									Нет, выбрать другой город
+								</button>
+							</form>
+						</div>
+					</div>
+					<nav class="middle-header-menu">
+						<li class="middle-header-menu__item">
+							<a href="#" class="middle-header-menu__link">
+								О КОМПАНИИ
+							</a>
+						</li>
+						<li class="middle-header-menu__item">
+							<a href="#" class="middle-header-menu__link">
+								РОЗНИЧНЫМ ПОКУПАТЕЛЯМ
+							</a>
+						</li>
+						<li class="middle-header-menu__item">
+							<a href="#" class="middle-header-menu__link">
+								ОПТОВЫМ ПОКУПАТЕЛЯМ
+							</a>
+						</li>
+						<li class="middle-header-menu__item">
+							<a href="#" class="middle-header-menu__link">
+								ПОСТАВЩИКАМ
+							</a>
+						</li>
+						<li class="middle-header-menu__item">
+							<a href="#" class="middle-header-menu__link">
+								КОНТАКТЫ
+							</a>
+						</li>
+					</nav>
+				</div>
+			</div>
+			<div class="lower-header">
+				<div class="container">
+					<div class="lower-header-elem">
+						<a href="#" class="logo-link">
+							<img alt="Ruges Logo">
+						</a>
+					</div>
+					<form name="search" method="post" class="lower-header-form">
+						<input type="text" class="input-search" placeholder="Введите название товара">
+						<input type="button" value="Найти" class="input-search-btn">
+					</form>
+					<button class="basket">
+						<div class="basket-icons">
+							<span class="basket-arrow">
+								∨
+							</span>
+							<span class="basket-icon">
+								<svg 
+	 xmlns="http://www.w3.org/2000/svg"
+	 xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="30px" height="27px">
+									<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+									 d="M29.144,10.467 L27.612,10.467 L27.605,10.467 L26.928,10.467 L17.650,0.278 C17.336,-0.067 16.795,-0.095 16.445,0.215 C16.096,0.525 16.068,1.060 16.382,1.405 L24.633,10.467 L5.401,10.467 L13.624,1.405 C13.937,1.060 13.909,0.525 13.560,0.215 C13.211,-0.095 12.669,-0.067 12.356,0.278 L3.099,10.467 L2.415,10.467 L2.415,10.467 L0.854,10.467 C0.384,10.467 -0.001,10.847 -0.001,11.312 C-0.001,11.776 0.384,12.157 0.854,12.157 L1.731,12.157 L4.196,23.515 C4.588,25.465 6.334,26.881 8.351,26.881 L17.693,26.881 C18.163,26.881 18.548,26.500 18.548,26.036 C18.548,25.571 18.163,25.190 17.693,25.190 L8.351,25.190 C7.146,25.190 6.106,24.346 5.871,23.177 C5.871,23.170 5.871,23.170 5.871,23.163 L3.484,12.157 L26.565,12.157 L25.581,16.917 C25.488,17.375 25.787,17.818 26.251,17.917 C26.308,17.931 26.365,17.931 26.422,17.931 C26.821,17.931 27.177,17.656 27.256,17.255 L28.310,12.157 L29.144,12.157 C29.614,12.157 29.999,11.776 29.999,11.312 C29.999,10.847 29.614,10.467 29.144,10.467 Z"/>
+								</svg>
+							</span>
+							<div class="basket-round-counter">
+								<span class="basket-round-counter__num">
+									2
+								</span>
+							</div>
+						</div>
+						<div class="basket-text">
+							<p class="basket__p-one">
+								В корзине 2 товара
+							</p>
+							<p class="basket__p-two">
+								на сумму 1650 р.
+							</p>
+						</div>
+					</button>
+				</div>
+			</div>
+		</header>
+<!-- Main Section -->
+		<section class="main-section">
+			<div class="container">
+<!-- Sidebar  -->
+				<sidebar class="sidebar-categories">
+<!-- Список Категории товаров -->
+					<nav class="categories-product">
+						<ul class="categories-product-list">
+							<li class="categories-product-item">
+								<a class="categories-product-item__link">
+									<span class="categories-product-item__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="29.5" height="15.5">
+											<path stroke="#000" fill="none" d="M27.115 10.638c-.14.92-.703 1.86-1.616 1.86H23.64c-.3 1.155-1.32 2.012-2.54 2.012-1.222 0-2.242-.857-2.54-2.01H9.823c-.3 1.153-1.32 2.01-2.54 2.01s-2.242-.857-2.54-2.01H2.498c-.914 0-1.313-.94-1.453-1.862l-.53-3.47a1.918 1.918 0 0 1 .3-1.358L3.79 1.378A1.94 1.94 0 0 1 5.4.51h8.17c.593 0 1.17.215 1.622.606L20.057 5.3l5.823.646c.505.055.953.314 1.262.726.31.412.437.923.36 1.438l-.387 2.528z"/>
+											<ellipse cx="7.268" cy="12.102" rx="2.398" ry="2.417" fill="none" stroke="#000" stroke-width="1.018"/>
+											<ellipse ry="2.417" rx="2.398" cy="12.102" cx="21.114" fill="none" stroke="#000" stroke-width="1.018"/>
+											<path fill="none" stroke="#000" stroke-width="1.018" d="M4.543 5.615h10.284v.073H4.543z"/>
+										</svg>
+									</span>
+									Авто			
+								</a>
+							</li>
+							<li class="categories-product-item">
+								<a class="categories-product-item__link">
+									<span class="categories-product-item__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="26.5" height="24.5">
+											<path stroke="#000" fill="none" d="M21.5 7.944l4 3.555h-4v11c0 .003.002.002.003.005H4.495c0-.003.004-.002.004-.006v-11h-4L12.733.622a.384.384 0 0 1 .527 0l7.77 6.904.47-.028v.444zm.003 14.56h.154c.208 0-.143.194-.154 0zm-17.164 0h.155c-.01.194-.364 0-.156 0z"/>
+											<path fill="none" stroke="#000" stroke-width="1.028" d="M10.82 13.335h4.563v9.132H10.82z"/>
+										</svg>
+									</span>
+									Дом
+								</a>
+							</li>
+							<li class="categories-product-item">
+								<a class="categories-product-item__link">
+									<span class="categories-product-item__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="14.5">
+											<path stroke="#000" fill="none" d="M21.499 6.389c0-1.394-1.055-3.628-3-3.89-.081-.011.077-.009 0 0 .072-.961-.312-.97-.315-1.063a.968.968 0 0 0-.961-.937H1.453A.952.952 0 0 0 .659.93a.98.98 0 0 0-.156.623c-.021.92-.152 7.172 3.196 11.134h-2.4v.812h16.2v-.812h-2.4c.195-.233.122-.783.295-1.028 3.109-.328 6.105-3.471 6.105-5.27zm-3-2.89c.063.024-.068-.009 0 0 1.482.208 2 2.248 2 3-.017 1.035-2.411 3.747-4 4 .627-1.47 1.792-5.707 2-7z"/>
+										</svg>
+									</span>
+									Кухня
+								</a>
+							</li>
+							<li class="categories-product-item">
+								<a class="categories-product-item__link">
+									<span class="categories-product-item__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="23.5" height="21.5">
+											<path stroke="#000" fill="none" d="M22.499 14.499l-.01-3.104c.047-.371-.082-.619-.201-.761-.143-.171-.268-.135-.789-.135h-19l-.078-7.264a.254.254 0 0 1 .134-.141l1.309-.366c-.014.151-.009.307.025.458.143.659.507.957.783 1.089.182.082.378.126.579.126.325-.009.645-.097.937-.253 1.128-.601 1.659-1.484 1.453-2.436-.096-.444-.253-.927-.679-1.127-.42-.2-.87-.015-1.214.17-.253.132-.751.391-1.176.772l-2.309.634a.244.244 0 0 0-.062.025c-.439.195-.736.615-.736 1.049l.034 7.264c-.31.039-.608-.055-.78.15-.124.151-.258.405-.21.79l-.01 3.06c0 .986 1.905 3.507 3 4v1h-1v1h2v-2c.058 0-.062 0 0 0h14c.062 0-.062.005 0 0v2h2v-1h-1v-1c1.09-.493 3-3.019 3-4z"/>
+										</svg>
+									</span>
+									Ванная и санузел
+								</a>
+							</li>
+							<li class="categories-product-item">
+								<a class="categories-product-item__link">
+									<span class="categories-product-item__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="19.5">
+											<path stroke="#000002" fill="none" d="M21.89 15.97c-1.198 1.655-3.024 2.53-5.28 2.53H9.643a5.153 5.153 0 0 1-3.645-1.487c-.97-.958-1.78-1.663-1.77-3.014.01-1.254.783-3.016 1.653-3.93l-.07-.074a7.77 7.77 0 0 1-.37.01c-3.056 0-4.812-1.33-4.884-1.407-.142-.152-.038-.708.035-.9a.558.558 0 0 1 .46-.356C2.56 7.168 3.74 6.378 4.23 5.9 4.466 2.987 6.72.5 9.734.5c3.17 0 5.506 2.296 5.506 5.4 0 1.073-.342 2.707-.918 3.6 2.555.125 4.95-.884 6.424-1.8.51-.318 1.304-.286 1.835 0 .528.282.92 1.002.92 1.588v2.01c0 2.387-.557 3.22-1.61 4.673z"/>
+											<ellipse cx="7.284" cy="6.257" rx=".859" ry=".99" fill="none" stroke="#000001" stroke-width=".693"/>
+										</svg>
+									</span>
+									Дети
+								</a>
+							</li>
+							<li class="categories-product-item">
+								<a class="categories-product-item__link">
+									<span class="categories-product-item__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.5" height="15.5">
+											<path stroke="#000" fill="none" d="M22.999 11.5c-.176 0-.343-.036-.5-.092v.591a1.5 1.5 0 0 1-2.058 1.391 1.494 1.494 0 0 1-1.442 1.109 1.5 1.5 0 0 1-1.5-1.5V9.408a1.483 1.483 0 0 1-.5.092h-9c-.176 0-.343-.036-.5-.092v3.591a1.5 1.5 0 1 1-3 0v-.592a1.483 1.483 0 0 1-.5.092 1.5 1.5 0 0 1-1.5-1.5v-.591a1.503 1.503 0 0 1-.5.091 1.5 1.5 0 0 1-1.5-1.5v-4a1.5 1.5 0 0 1 1.5-1.5c.177 0 .343.036.5.092v-.592a1.5 1.5 0 0 1 2.058-1.39A1.497 1.497 0 0 1 7.499 2v3.591c.157-.056.324-.092.5-.092h9c.176 0 .343.036.5.092V2a1.5 1.5 0 1 1 3 0v.591c.157-.056.324-.092.5-.092A1.5 1.5 0 0 1 22.499 4v.591c.157-.056.324-.092.5-.092a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.501z"/>
+										</svg>
+									</span>
+									Спорт и фитнес
+								</a>
+							</li>
+							<li class="categories-product-item">
+								<a class="categories-product-item__link">
+									<span class="categories-product-item__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="15" height="23">
+											<path fill-rule="evenodd" d="M13.351 22.999H9.728c-.908 0-1.648-.789-1.648-1.759v-7.937c0-.279.212-.506.475-.506h.579v-.878c0-.28.212-.506.474-.506h3.863c.262 0 .474.226.474.506v.878h.58c.262 0 .474.227.474.506v7.937c0 .97-.739 1.759-1.648 1.759zm-.355-10.574h-2.913v.373h2.913v-.373zm1.054 1.385H9.029v7.43c0 .412.313.747.699.747h3.623c.386 0 .699-.335.699-.747v-7.43zm-8.78 9.189H1.648c-.909 0-1.649-.789-1.649-1.759V14.5c0-.28.213-.506.475-.506h.579V6.538c0-.28.213-.506.475-.506h.062V2.87a.53.53 0 0 1 .065-.257c.013-.025.341-.618.75-1.222C3.067.416 3.533-.001 3.967-.001c.345 0 .963.17 1.236 1.306.124.518.125 1.029.125 1.05v3.677h.062c.262 0 .475.226.475.506v7.456h.579c.262 0 .474.226.475.506v6.74c0 .97-.74 1.759-1.649 1.759zM4.38 2.355c-.002-.514-.155-1.284-.386-1.34-.261.137-.915 1.033-1.456 1.994v3.023H4.38V2.355zm.536 4.689H2.002v6.95h2.914v-6.95zM5.969 21.24v-6.234H.948v6.234c0 .412.314.747.7.747H5.27c.385 0 .7-.335.7-.747h-.001z"/>
+										</svg>
+									</span>
+									Красота и здоровье
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<nav class="categories-various">
+						<ul class="various-list">
+							<li class="various-item">
+								<a class="various-link">
+									Новые поступления
+								</a>
+							</li>
+							<li class="various-item">
+								<a class="various-link">
+									Акции
+								</a>
+							</li>
+							<li class="various-item">
+								<a class="various-link">
+									Новости
+								</a>
+							</li>
+							<li class="various-item">
+								<a class="various-link">
+									Полезные статьи
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="info-request">
+						<div class="info-request-text">
+							<p class="info-request__p">
+								Нужна какая-либо информация?
+							</p>
+						</div>
+						<button class="info-request-btn">
+							<p class="info-request-btn__text">
+								Отправить запрос
+							</p>
+						</button>
+					</div>
+				</sidebar>
+<!-- Content block -->
+				<article class="shopwindow">
+					<ul class="shopwindow-goods-list clearfix">
+						<li class="shopwindow-goods__item shopwindow-goods__item_wide" style='background-image: URL(/build/assets/images/hot-shapers.jpg)'>
+							<div class="shopwindow-goods__content-left">
+								<div class="shopwindow-goods__new-label">
+									<p class="shopwindow-goods__new-label-p">
+										Новинка
+									</p>
+								</div>
+								<a href="#" class="shopwindow-goods__title">
+									БРИДЖИ HOT SHAPERS
+								</a>
+								<p class="shopwindow-goods__description">
+									Корректирующее белье, подойдет любому человеку
+								</p>
+								<p class="shopwindow-goods__price">
+									1200 руб.
+								</p>
+								<button class="shopwindow-goods__btn">
+									Купить
+								</button>
+							</div>
+						</li>
+						<li class="shopwindow-goods__item" style='background-image: URL(/build/assets/images/skull.jpg)'>
+							<div class="shopwindow-goods__content-left">
+								<a href="#" class="shopwindow-goods__title-small">
+									СИЛИКОНОВАЯ ФОРМА ДЛЯ ЯИЧНИЦЫ
+								</a>
+								<p class="shopwindow-goods__price">
+									50 руб.
+								</p>
+								<button class="shopwindow-goods__btn">
+									Купить
+								</button>
+							</div>
+						</li>
+						<li class="shopwindow-goods__item" style='background-image: URL(/build/assets/images/cat.jpg)'>
+							<div class="shopwindow-goods__content-left">
+								<a href="#" class="shopwindow-goods__title-small">
+									КОГТЕТОЧКА EMERYCAT BOARD
+								</a>
+								<p class="shopwindow-goods__price">
+									850 руб.
+								</p>
+								<button class="shopwindow-goods__btn">
+									Купить
+								</button>
+							</div>
+						</li>
+						<li class="shopwindow-goods__item shopwindow-categories__item" style='background-image: URL(/build/assets/images/car.jpg)'>
+								<div class="shopwindow-categories__item-title">
+								<p class="shopwindow-categories__item-title-p">
+									Всё для автомобилистов
+								</p>
+								</div>
+								<a href="#" class="shopwindow-categories__item-link">
+									Подробнее
+								</a>
+						</li>
+						<li class="shopwindow-goods__item shopwindow-categories__item" style='background-image: URL(/build/assets/images/boy.jpg)'>
+								<div class="shopwindow-categories__item-title">
+								<p class="shopwindow-categories__item-title-p">
+									Товары для детей
+								</p>
+								</div>
+								<a href="#" class="shopwindow-categories__item-link">
+									Подробнее
+								</a>
+						</li>
+					</ul>
+				</article>
+			</div>
+		</section>
+
+		<section class="popular-products">
+			<div class="container">
+				<div class="popular-products-title">
+					<p class="popular-products-title__p">
+						Популярные товары
+					</p>
+				</div>
+				<ul class="popular-products-list clearfix">
+					<li class="popular-products-item">
+						<div class="popular-products-item-container">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img" style="background-image: URL(/build/assets/images/pillow.jpg)">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">-</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img" style="background-image: URL(/build/assets/images/pillow.jpg)">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">-</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img" style="background-image: URL(/build/assets/images/pillow.jpg)">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">-</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img" style="background-image: URL(/build/assets/images/pillow.jpg)">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">-</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img" style="background-image: URL(/build/assets/images/pillow.jpg)">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">-</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img" style="background-image: URL(/build/assets/images/pillow.jpg)">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">-</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img" style="background-image: URL(/build/assets/images/pillow.jpg)">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">-</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img" style="background-image: URL(/build/assets/images/pillow.jpg)">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">-</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer">
+		
+		<div class="footer-categories">
+			<div class="container">
+				<ul class="footer-categories-list">
+					<li class="footer-categories__item">
+						<a href="#" class="footer-categories__link">
+							<img src="../build/assets/images/for-kitchen.jpg" alt="Для кухни" class="kitchen-img">
+						</a>
+					</li>
+					<li class="footer-categories__item">
+						<a href="#" class="footer-categories__link">
+							<img src="../build/assets/images/sport-fitness.jpg" alt="Спорт и фитнес" class="sport-img">
+						</a>
+					</li>
+					<li class="footer-categories__item">
+						<a href="#" class="footer-categories__link">
+							<img src="../build/assets/images/beauty-health.jpg" alt="Красота и здоровье" class="beauty">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="subscribe-container">
+			<div class="container">
+				<p class="subscribe__p">
+					Узнавайте о выгодных предложениях и получайте личные рекомендации
+				</p>
+				<form class="subscribe-form">
+					<input type="text" class="subscribe-input" placeholder="Ваш email">
+					<input type="button" class="subscribe-btn" value="Подписаться">
+				</form>
+			</div>
+		</div>
+		<nav class="footer-nav">
+			<div class="container">
+				<ul class="various-list footer-various-list">
+					<li class="various-item">
+						<a class="various-link">
+							Новые поступления
+						</a>
+					</li>
+					<li class="various-item">
+						<a class="various-link">
+							Акции
+						</a>
+					</li>
+					<li class="various-item">
+						<a class="various-link">
+							Новости
+						</a>
+					</li>
+					<li class="various-item">
+						<a class="various-link">
+							Полезные статьи
+						</a>
+					</li>
+				</ul>
+				<ul class="footer-nav-list">
+					<li class="middle-header-menu__item display-bl">
+							<a href="#" class="middle-header-menu__link">
+								О компании
+							</a>
+						</li>
+						<li class="middle-header-menu__item display-bl">
+							<a href="#" class="middle-header-menu__link">
+								Розничным покупателям
+							</a>
+						</li>
+						<li class="middle-header-menu__item display-bl">
+							<a href="#" class="middle-header-menu__link">
+								Оптовым покупателям
+							</a>
+						</li>
+						<li class="middle-header-menu__item display-bl">
+							<a href="#" class="middle-header-menu__link">
+								Поставщикам
+							</a>
+						</li>
+						<li class="middle-header-menu__item display-bl">
+							<a href="#" class="middle-header-menu__link">
+								Контакты
+							</a>
+						</li>
+				</ul>
+				<ul class="footer-menu-tel-list">
+					<li class="footer-menu-tel-item">
+						<p class="footer-menu-tel-item__p">
+							Ваш город:
+						</p>
+						<a class="footer-menu-tel-item__link" href="#">
+							Киев
+						</a>
+					</li>
+					<li class="footer-menu-tel-item">
+						<p class="footer-menu-tel-item__p">
+							Розничным покупателям:
+						</p>
+						<a class="footer-menu-tel-item__link" href="tel:84952803840">
+							8 (495) 280-38-40
+						</a>
+					</li>
+					<li class="footer-menu-tel-item">
+						<p class="footer-menu-tel-item__p">
+							Оптовым покупателям:
+						</p>
+						<a class="footer-menu-tel-item__link" href="tel:89266291134">
+							8 (926) 629-11-34
+						</a>
+					</li>
+					<li class="footer-menu-tel-item">
+						<a class="footer-menu-tel-item__link call-me_btn">
+							Перезвоните мне
+						</a>
+					</li>
+				</ul>
+				<ul class="login-request-list">
+					<li class="login-request__item">
+						<a href="#" class="login-link">
+							Войти в личный кабинет
+						</a>
+					</li>
+					<li class="login-request__item">
+						<button class="info-request-btn info-request-btn_simple">
+							Отправить запрос
+						</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="lowest-footer">
+			<div class="container">
+				<div class="logo-place">
+					<a href="#" class="logo-link">
+						<img alt="Ruges Logo">
+					</a>
+				</div>
+				<div class="ishop-name">
+					<p class="ishop-name__text">
+						Интернет-магазин «Ругес» 2014—2017
+					</p>
+				</div>
+				<div class="ishop-mobile">
+					<a href="#" class="ishop-mobile__link">
+						Мобильная версия
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

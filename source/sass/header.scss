@@ -1,0 +1,226 @@
+.header{
+	height: 167px;
+}
+.upper-header{
+	height: 40px;
+	border: solid 1px $white-three;
+	box-sizing: border-box;
+	padding-bottom: 40px;
+}
+.upper-header-tel-list{
+	display: inline-block;
+}
+.upper-header-tel-item{
+	display: inline-block;
+	height: 13px;
+	margin-right: 20px;
+}
+.upper-header-tel-item__p{
+	color: $warm-grey;
+	display: inline-block;
+}
+.upper-header-tel-item__link{
+	color: $black;
+	display: inline-block;
+}
+.call-me{
+	color: $azure;
+}
+.call-me:hover{
+	color: $azure-light;
+}
+.login{
+	float: right;
+	margin-top: 12px;
+}
+.login-link, .login-icon{
+	display: inline-block;
+	vertical-align: top;
+}
+.login-link{
+	color: $black;
+	text-align: right;
+}
+.login-icon{
+	margin-right: 6px;
+}
+
+/*MIDDLE HEADER*/
+.location{
+	position: relative;
+	width: 238px;
+}
+.location, .location__p, .location-link{
+	display: inline-block;
+	vertical-align: middle;
+}
+.location__yes-no{
+	position: absolute;
+	top: 44px;
+    left: 0;
+	width: 218px;
+	height: 49px;
+	border-radius: 3px;
+	background-color: $off-white;
+	border: solid 1px #d7ccc8;
+}
+.location__yes-no-triangle{
+	position: absolute;
+	left: 20px;
+	bottom: 100%;
+	width: 15px;
+    height: 15px;
+    border-top: solid 1px #d7ccc8;
+    border-right:solid 1px #d7ccc8;
+    background-color: #fff8e1;
+    transform: rotate(-45deg);
+    margin-bottom: -7px;
+}
+.location__yes-no-form{
+	margin: 10px 0 0 10px;
+}
+.location__yes, .location__no{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+}
+.location__yes{
+	width: 40px;
+	height: 30px;
+	border-style: none;
+	border-radius: 3px;
+	background-color: $azure;
+	color: $white;
+	transition: background-color 0.3s;
+}
+.location__yes:hover{
+	background-color: $azure-light;
+	transition: background-color 0.3s;
+}
+.location__no{
+	color: $warm-grey;
+	background-color: transparent;
+	border-style: none;
+}
+.middle-header-menu, .middle-header-menu__item{
+	display: inline-block;
+}
+.middle-header-menu__item{
+	margin-right: 15px;
+}
+.middle-header-menu__item::before{
+	content: "●";
+	font-size: 9px;
+	color: $booger;
+	padding-right: 10px;
+	display: inline-block;
+	vertical-align: text-top;
+	padding-top: 3px;
+}
+.middle-header-menu__item:first-child:before{
+	content: none;
+}
+.middle-header-menu__link{
+	color: $black;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*LOWER HEADER*/
+.lower-header-elem, .lower-header-form, .input-search, .input-search-btn, .basket{
+	display: inline-block;
+	vertical-align: middle;
+}
+.lower-header-elem .logo-link{
+	width: 197.3px;
+	height: 47px;
+	background-color: $white-three;
+	margin-right: 40px;
+}
+.lower-header-form{
+	margin-right: 10px;
+}
+.input-search {
+	width: 633px;
+	height: 50px;
+	background-color: $white; 
+	border: solid 1px $white-three;
+	box-sizing: border-box;
+	padding: 15px 30px;
+}
+.input-search-btn, .basket{
+	height: 50px;
+	color: $white;
+	margin-left: -5px;
+}
+.input-search-btn {
+	width: 90px;
+	height: 50px;
+	background-color: $azure;
+	box-shadow: inset 0px -2px 0 0 #1e88e5;
+	border-style: none;
+	border-radius: 0 3px 3px 0;
+	transition: background-color 0.3s;
+}
+.input-search-btn:hover{
+	background-color: $azure-light;
+	transition: background-color 0.3s;
+}
+.basket{
+	position: relative;
+	border-style: none;
+	width: 224px;
+	height: 50px;
+	border-radius: 3px;
+	background-color: $booger; 
+	box-shadow: 0px 10px 20px 0 rgba(139, 195, 74, 0.26), 0px 10px 15px 0 rgba(139, 195, 74, 0.36), inset 0px -2px 0 0 #7cb342;
+	transition: background-color 0.3s;
+}
+.basket:hover{
+	background-color: $booger-light;
+	transition: background-color 0.3s;
+}
+.basket-icons{
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+.basket-arrow{
+	display: block;
+	position: absolute;
+	top: 7px;
+    left: -6px;
+	font-weight: bold;
+}
+.basket-icon{
+	display: block;
+	position: absolute;
+	top: 0;
+    left: 12px;
+}
+.basket-round-counter{
+	position: absolute;
+	top: 15px;
+    left: 30px;
+	height: 16px;
+	min-width: 14px;
+    border: solid 1px #8bc34a;
+    border-radius: 10px;
+    padding: 1px 2px;
+    background-color: #2196f3;
+}
+.basket-round-counter__num{
+	font-size: 11px;
+	line-height: 16px;
+	text-align: center;
+}
+.basket-text{
+	position: absolute;
+	top: 0;
+	left: 80px;
+}
+.basket__p-one, .basket__p-two{
+	font-size: 14px;
+	line-height: 4px;
+	text-align: left;
+}
