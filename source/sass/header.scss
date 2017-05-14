@@ -1,26 +1,27 @@
 .header{
-	height: 167px;
+	min-height: 167px;
 }
 .upper-header{
 	height: 40px;
 	border: solid 1px $white-three;
 	box-sizing: border-box;
-	padding-bottom: 40px;
+	margin-bottom: 15px;
 }
 .upper-header-tel-list{
 	display: inline-block;
 }
 .upper-header-tel-item{
 	display: inline-block;
-	height: 13px;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 .upper-header-tel-item__p{
 	color: $warm-grey;
 	display: inline-block;
+	line-height: 11px;
 }
 .upper-header-tel-item__link{
 	color: $black;
+	font-size: 13px;
 	display: inline-block;
 }
 .call-me{
@@ -31,7 +32,7 @@
 }
 .login{
 	float: right;
-	margin-top: 12px;
+	margin-top: 11px;
 }
 .login-link, .login-icon{
 	display: inline-block;
@@ -46,9 +47,12 @@
 }
 
 /*MIDDLE HEADER*/
+.middle-header{
+	margin-bottom: 10px;
+}
 .location{
 	position: relative;
-	width: 238px;
+	width: 229px;
 }
 .location, .location__p, .location-link{
 	display: inline-block;
@@ -106,16 +110,16 @@
 	display: inline-block;
 }
 .middle-header-menu__item{
-	margin-right: 15px;
+	margin-right: 5px;
 }
 .middle-header-menu__item::before{
 	content: "●";
-	font-size: 9px;
+	font-size: 7px;
 	color: $booger;
-	padding-right: 10px;
+	padding-right: 7px;
 	display: inline-block;
 	vertical-align: text-top;
-	padding-top: 3px;
+	padding-top: 5px;
 }
 .middle-header-menu__item:first-child:before{
 	content: none;
@@ -127,18 +131,28 @@
 }
 
 /*LOWER HEADER*/
+.lower-header{
+	padding-bottom: 8px;
+}
 .lower-header-elem, .lower-header-form, .input-search, .input-search-btn, .basket{
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 }
 .lower-header-elem .logo-link{
 	width: 197.3px;
 	height: 47px;
 	background-color: $white-three;
-	margin-right: 40px;
+	margin-right: 36px;
 }
 .lower-header-form{
-	margin-right: 10px;
+	position: relative;
+    top: -22px;
+	margin-right: 15px;
+}
+.lower-header-form__icon{
+	position: relative;
+	left: 20px;
+	top: 38px;
 }
 .input-search {
 	width: 633px;
@@ -146,12 +160,12 @@
 	background-color: $white; 
 	border: solid 1px $white-three;
 	box-sizing: border-box;
-	padding: 15px 30px;
+	padding: 15px 57px;
 }
 .input-search-btn, .basket{
 	height: 50px;
 	color: $white;
-	margin-left: -5px;
+	margin-left: -4px;
 }
 .input-search-btn {
 	width: 90px;
@@ -196,12 +210,12 @@
 	display: block;
 	position: absolute;
 	top: 0;
-    left: 12px;
+    left: 11px;
 }
 .basket-round-counter{
 	position: absolute;
 	top: 15px;
-    left: 30px;
+    left: 25px;
 	height: 16px;
 	min-width: 14px;
     border: solid 1px #8bc34a;
@@ -217,10 +231,13 @@
 .basket-text{
 	position: absolute;
 	top: 0;
-	left: 80px;
+	left: 70px;
 }
 .basket__p-one, .basket__p-two{
 	font-size: 14px;
 	line-height: 4px;
 	text-align: left;
+}
+.basket__text_bold{
+	font-family: $bold;
 }

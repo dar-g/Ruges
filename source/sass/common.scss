@@ -23,6 +23,9 @@ $dodger-blue-two: #48a8f5;
 $azure-light: #42A5F5;
 $booger-light: #9CCC65;
 
+$regular: 'Proxima Nova';
+$bold: 'Proxima Nova Bold';
+
 html, body{
 	width: 100%;
 	height: 100%;
@@ -31,7 +34,7 @@ html, body{
 }
 
 body{
-	font-family: 'Proxima Nova';
+	font-family: $regular;
 	font-size: 14px;
 }
 .container{

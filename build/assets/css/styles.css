@@ -1,15 +1,15 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Proxima Nova';
-  src: url("/build/assets/fonts/proxima_nova_bold-webfont.eot");
-  src: url("/build/assets/fonts/proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("/build/assets/fonts/proxima_nova_bold-webfont.woff2") format("woff2"), url("/build/assets/fonts/proxima_nova_bold-webfont.woff") format("woff"), url("/build/assets/fonts/proxima_nova_bold-webfont.ttf") format("truetype"), url("/build/assets/fonts/proxima_nova_bold-webfont.svg#proxima_nova_rgbold") format("svg");
-  font-weight: bold;
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/proxima_nova_bold-webfont.eot");
+  src: url("../fonts/proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_bold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_bold-webfont.woff") format("woff"), url("../fonts/proxima_nova_bold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("/build/assets/fonts/proxima_nova_regular-webfont.eot");
-  src: url("/build/assets/fonts/proxima_nova_regular-webfont.eot?#iefix") format("embedded-opentype"), url("/build/assets/fonts/proxima_nova_regular-webfont.woff2") format("woff2"), url("/build/assets/fonts/proxima_nova_regular-webfont.woff") format("woff"), url("/build/assets/fonts/proxima_nova_regular-webfont.ttf") format("truetype"), url("/build/assets/fonts/proxima_nova_regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  src: url("../fonts/proxima_nova_regular-webfont.eot");
+  src: url("../fonts/proxima_nova_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_regular-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_regular-webfont.woff") format("woff"), url("../fonts/proxima_nova_regular-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_regular-webfont.svg#proxima_nova_rgregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -20,7 +20,7 @@ html, body {
   padding: 0; }
 
 body {
-  font-family: 'Proxima Nova';
+  font-family: "Proxima Nova";
   font-size: 14px; }
 
 .container {
@@ -48,28 +48,29 @@ button, input {
   clear: both; }
 
 .header {
-  height: 167px; }
+  min-height: 167px; }
 
 .upper-header {
   height: 40px;
   border: solid 1px #e6e6e6;
   box-sizing: border-box;
-  padding-bottom: 40px; }
+  margin-bottom: 15px; }
 
 .upper-header-tel-list {
   display: inline-block; }
 
 .upper-header-tel-item {
   display: inline-block;
-  height: 13px;
-  margin-right: 20px; }
+  margin-right: 15px; }
 
 .upper-header-tel-item__p {
   color: #808080;
-  display: inline-block; }
+  display: inline-block;
+  line-height: 11px; }
 
 .upper-header-tel-item__link {
   color: #1a1a1a;
+  font-size: 13px;
   display: inline-block; }
 
 .call-me {
@@ -80,7 +81,7 @@ button, input {
 
 .login {
   float: right;
-  margin-top: 12px; }
+  margin-top: 11px; }
 
 .login-link, .login-icon {
   display: inline-block;
@@ -94,9 +95,12 @@ button, input {
   margin-right: 6px; }
 
 /*MIDDLE HEADER*/
+.middle-header {
+  margin-bottom: 10px; }
+
 .location {
   position: relative;
-  width: 238px; }
+  width: 229px; }
 
 .location, .location__p, .location-link {
   display: inline-block;
@@ -154,16 +158,16 @@ button, input {
   display: inline-block; }
 
 .middle-header-menu__item {
-  margin-right: 15px; }
+  margin-right: 5px; }
 
 .middle-header-menu__item::before {
   content: "●";
-  font-size: 9px;
+  font-size: 7px;
   color: #8bc34a;
-  padding-right: 10px;
+  padding-right: 7px;
   display: inline-block;
   vertical-align: text-top;
-  padding-top: 3px; }
+  padding-top: 5px; }
 
 .middle-header-menu__item:first-child:before {
   content: none; }
@@ -174,18 +178,28 @@ button, input {
   vertical-align: top; }
 
 /*LOWER HEADER*/
+.lower-header {
+  padding-bottom: 8px; }
+
 .lower-header-elem, .lower-header-form, .input-search, .input-search-btn, .basket {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: top; }
 
 .lower-header-elem .logo-link {
   width: 197.3px;
   height: 47px;
   background-color: #e6e6e6;
-  margin-right: 40px; }
+  margin-right: 36px; }
 
 .lower-header-form {
-  margin-right: 10px; }
+  position: relative;
+  top: -22px;
+  margin-right: 15px; }
+
+.lower-header-form__icon {
+  position: relative;
+  left: 20px;
+  top: 38px; }
 
 .input-search {
   width: 633px;
@@ -193,12 +207,12 @@ button, input {
   background-color: #ffffff;
   border: solid 1px #e6e6e6;
   box-sizing: border-box;
-  padding: 15px 30px; }
+  padding: 15px 57px; }
 
 .input-search-btn, .basket {
   height: 50px;
   color: #ffffff;
-  margin-left: -5px; }
+  margin-left: -4px; }
 
 .input-search-btn {
   width: 90px;
@@ -243,12 +257,12 @@ button, input {
   display: block;
   position: absolute;
   top: 0;
-  left: 12px; }
+  left: 11px; }
 
 .basket-round-counter {
   position: absolute;
   top: 15px;
-  left: 30px;
+  left: 25px;
   height: 16px;
   min-width: 14px;
   border: solid 1px #8bc34a;
@@ -264,18 +278,20 @@ button, input {
 .basket-text {
   position: absolute;
   top: 0;
-  left: 80px; }
+  left: 70px; }
 
 .basket__p-one, .basket__p-two {
   font-size: 14px;
   line-height: 4px;
   text-align: left; }
 
+.basket__text_bold {
+  font-family: "Proxima Nova Bold"; }
+
 .main-section {
   background-color: #f5fafa;
-  padding: 30px 0; }
+  padding: 30px 0 15px 0; }
 
-/*САЙДБАР МЕНЮ - РАЗДЕЛЫ ТОВАРОВ*/
 .sidebar-categories {
   float: left;
   margin-right: 15px; }
@@ -305,33 +321,36 @@ button, input {
   vertical-align: baseline;
   width: 25px;
   height: 25px;
-  padding: 0 20px 0 15px;
+  padding: 0 18px 0 19px;
   text-align: center; }
 
-/*САЙДБАР МЕНЮ - РАЗДЕЛЫ РАЗНОЕ*/
 .categories-various {
   width: 288px;
-  height: 155px;
+  min-height: 155px;
   background-color: #ffffff;
   margin-bottom: 15px; }
 
 .various-link {
   display: block;
-  line-height: 36px;
-  padding-left: 15px;
-  padding-top: 3.1px; }
+  line-height: 33px;
+  padding-left: 18px;
+  padding-top: 6.1px; }
 
-/*САЙДБАР МЕНЮ - ЗАПРОС ИНФО*/
 .info-request {
   width: 288px;
   height: 130px;
   background-color: #8bc34a;
-  padding: 10px 20px;
+  padding: 16px 18px;
   box-sizing: border-box; }
+
+.info-request-text {
+  margin-bottom: 22px; }
 
 .info-request__p {
   font-size: 18px;
   line-height: 20px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
   text-transform: uppercase;
   color: #ffffff; }
 
@@ -354,8 +373,8 @@ button, input {
   text-align: center;
   color: #ffffff; }
 
-/*ВИТРИНА - РАЗДЕЛ С ТОВАРАМИ*/
 .shopwindow-goods__item {
+  position: relative;
   display: block;
   float: left;
   width: 288px;
@@ -377,7 +396,7 @@ button, input {
   background-position: bottom right; }
 
 .shopwindow-goods__content-left {
-  padding: 15px;
+  padding: 18px;
   width: 199px; }
 
 .shopwindow-goods__new-label {
@@ -385,8 +404,11 @@ button, input {
   height: 20px;
   border-radius: 10px;
   background-color: #8bc34a;
-  margin-bottom: 20px;
-  margin-top: -10px; }
+  margin-bottom: 14px;
+  margin-top: -8px; }
+
+.shopwindow-goods__new-label-p {
+  text-transform: uppercase; }
 
 .shopwindow-goods__new-label-p {
   color: #ffffff;
@@ -396,36 +418,42 @@ button, input {
 
 .shopwindow-goods__title {
   font-size: 30px;
-  color: #1a1a1a;
-  line-height: 32px; }
+  color: #1a1a1a; }
+
+.shopwindow-goods__title-p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
 
 .shopwindow-goods__title-small {
-  font-size: 18px;
+  font-size: 21px;
   color: #1a1a1a;
-  line-height: 20px; }
+  line-height: 22px; }
 
 .shopwindow-goods__description {
   display: block;
+  -webkit-margin-before: 6px;
+  -webkit-margin-after: 0;
   width: 200px;
   height: 54px;
   font-size: 16px;
   line-height: 18px; }
 
 .shopwindow-goods__item:first-child .shopwindow-goods__price {
-  bottom: -21px; }
+  bottom: 37px; }
 
 .shopwindow-goods__price {
-  position: relative;
-  bottom: -155px;
+  position: absolute;
+  bottom: 37px;
   font-size: 18px;
   color: #2196f3; }
 
 .shopwindow-goods__item:first-child .shopwindow-goods__btn {
-  bottom: -9px; }
+  bottom: 19px; }
 
 .shopwindow-goods__btn {
-  position: relative;
-  bottom: -143px;
+  position: absolute;
+  bottom: 19px;
+  left: 17px;
   width: 64px;
   height: 30px;
   border-radius: 3px;
@@ -458,14 +486,14 @@ button, input {
   margin-right: 0; }
 
 .shopwindow-categories__item-title-p {
-  font-size: 18px;
+  font-size: 21px;
   color: #1a1a1a;
   text-transform: uppercase; }
 
 .shopwindow-categories__item-link {
   position: absolute;
-  left: 20px;
-  bottom: 14px;
+  left: 17px;
+  bottom: 20px;
   display: block;
   width: 94px;
   height: 30px;
@@ -477,13 +505,12 @@ button, input {
   text-align: center;
   line-height: 30px; }
 
-/*ПОПУЛЯРНЫЕ ТОВАРЫ*/
 .popular-products-list {
   display: block;
   margin-bottom: 10px; }
 
 .popular-products-title {
-  margin: 30px 0; }
+  margin: 26px 0; }
 
 .popular-products-title__p {
   font-size: 20px;
@@ -491,17 +518,26 @@ button, input {
 
 .popular-products-item {
   float: left;
+  box-sizing: border-box;
   display: block;
   width: 288px;
   height: 411px;
   background-color: #ffffff;
   border: solid 1px #e6e6e6;
-  padding: 0 20px 20px 20px;
-  box-sizing: border-box;
+  padding: 0 20px 20px 17px;
   margin: 0 12px 12px 0; }
 
 .popular-products-item:nth-child(4) {
   margin-left: 0; }
+
+.popular-products-item-container {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.popular-products-item__title {
+  position: absolute;
+  width: 250px; }
 
 .popular-products__quick-view:hover .popular-products__quick-view-btn {
   display: block; }
@@ -517,8 +553,8 @@ button, input {
 .popular-products__quick-view-btn {
   display: none;
   position: absolute;
-  top: 45%;
-  left: 10%;
+  top: 57%;
+  left: 11%;
   background-color: #ffffff;
   width: 200px;
   height: 40px;
@@ -533,7 +569,7 @@ button, input {
   object-fit: contain;
   background-image: url(/build/assets/images/icons/eye.svg);
   vertical-align: middle;
-  margin-right: 10px; }
+  margin-right: 5px; }
 
 .quick-view-btn__text {
   display: inline-block;
@@ -546,7 +582,7 @@ button, input {
 
 .popular-products-item__price {
   position: relative;
-  bottom: -8px;
+  bottom: -54px;
   width: 112px; }
   .popular-products-item__price .popular-products-item__price-p {
     font-size: 20px;
@@ -555,7 +591,7 @@ button, input {
 .popular-products-item__delivery {
   position: relative;
   left: 9px;
-  bottom: -9px; }
+  bottom: -52px; }
 
 .popular-products-item__delivery-icon {
   display: inline-block;
@@ -568,9 +604,14 @@ button, input {
   color: #808080; }
 
 .popular-products-item__quantity-counter {
-  position: relative;
-  left: 0;
-  bottom: 2px; }
+  position: absolute;
+  left: 1px;
+  bottom: -73px;
+  width: 110px;
+  font-size: 0; }
+
+.popular-products-item__quantity-counter-minus {
+  margin-right: 3px; }
 
 .popular-products-item__quantity-counter-minus, .popular-products-item__quantity-counter-plus {
   width: 23px;
@@ -581,12 +622,16 @@ button, input {
   color: #44a6f5; }
 
 .popular-products-item__quantity-counter-num {
-  color: #808080; }
+  min-width: 40px;
+  color: #808080;
+  text-align: center;
+  font-size: 14px;
+  padding-right: 3px; }
 
 .popular-products-item__to-buy-btn {
-  position: relative;
-  bottom: 3px;
-  right: -34px;
+  position: absolute;
+  bottom: -81px;
+  right: 0;
   width: 133px;
   height: 40px;
   border-radius: 3px;
@@ -615,7 +660,7 @@ button, input {
   background-color: #f5fafa; }
 
 .footer-categories {
-  padding: 20px 0; }
+  padding: 30px 0 26px 0; }
 
 .footer-categories__item {
   display: inline-block;
@@ -631,12 +676,14 @@ button, input {
   background-color: #ffffff;
   height: 50px; }
 
+.subscribe-form {
+  margin-top: 10px; }
+
 .subscribe__p, .subscribe-form {
   display: inline-block; }
 
 .subscribe__p {
-  margin-right: 20px;
-  padding-top: 2px; }
+  margin-right: 16px; }
 
 .subscribe-input {
   width: 167px;
@@ -650,6 +697,7 @@ button, input {
   height: 30px;
   background-color: #eff5f5;
   border: solid 1px #e6e6e6;
+  border-radius: 0 3px 3px 0;
   margin-left: -5px;
   transition: background-color 0.3s; }
 
@@ -659,12 +707,16 @@ button, input {
   cursor: pointer; }
 
 .footer-nav {
-  padding: 40px 0 20px 0; }
+  padding: 34px 0 11px 0; }
 
 .footer-various-list, .footer-nav-list, .footer-menu-tel-list, .login-request-list {
   display: inline-block;
   vertical-align: top;
   margin-right: 150px; }
+
+.footer-various-list {
+  margin-left: -19px;
+  margin-right: 172px; }
 
 .footer-various-list .various-item {
   line-height: 35px;
@@ -685,22 +737,24 @@ button, input {
   color: #2196f3; }
 
 .footer-menu-tel-list {
-  line-height: 12px; }
+  line-height: 12px;
+  margin-left: -16px; }
 
 .footer-menu-tel-item__p {
-  font-size: 10px;
+  -webkit-margin-before: 4px;
+  font-size: 12px;
   color: #808080; }
 
 .footer-menu-tel-item__link {
   display: block;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 18px;
   color: #1a1a1a;
   font-weight: bold; }
 
-/*.footer-menu-tel-item__link:last-child{
-	margin-bottom: 0;
-}*/
+.footer-menu-tel-item__arrow {
+  font-size: 16px; }
+
 .call-me_btn {
   display: block;
   width: 118px;
@@ -727,6 +781,7 @@ button, input {
   color: #2196f3; }
 
 .login-request__item .info-request-btn_simple {
+  font-family: "Proxima Nova";
   font-size: 14px;
   line-height: 35px;
   border-style: none;
@@ -738,7 +793,7 @@ button, input {
   background-color: transparent; }
 
 .lowest-footer {
-  height: 57px;
+  height: 60px;
   border-top: solid 1px #d9d9d9;
   padding-top: 7px;
   box-sizing: border-box; }
@@ -751,7 +806,7 @@ button, input {
   margin-right: 80px; }
 
 .ishop-name {
-  margin-right: 99px; }
+  margin-right: 79px; }
 
 .logo-link {
   display: block;
