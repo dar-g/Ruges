@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1920px">
+	<title>Интернет-магазин «Ругес» - Товар</title>
+	<link rel="stylesheet" href="../build/assets/css/normalize.css">
+	<link rel="stylesheet" href="../build/assets/css/styles.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="upper-header">
+				<div class="container">
+					<ul class="upper-header-tel-list">
+						<li class="upper-header-tel-item">
+							<p class="upper-header-tel-item__p">
+								Розничным покупателям:
+							</p>
+							<a class="upper-header-tel-item__link" href="tel:84952803840">
+								8 (495) 280-38-40
+							</a>
+						</li>
+						<li class="upper-header-tel-item">
+							<p class="upper-header-tel-item__p">
+								Оптовым покупателям:
+							</p>
+							<a class="upper-header-tel-item__link" href="tel:89266291134">
+								8 (926) 629-11-34
+							</a>
+						</li>
+						<li class="upper-header-tel-item">
+							<a class="upper-header-tel-item__link call-me">
+								Перезвоните мне
+							</a>
+						</li>
+					</ul>
+					<div class="login">
+						<a href="#" class="login-link">
+							<span class="login-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="15">
+									<path fill-rule="evenodd" fill="#D9D9D9" d="M10.698 10.721L8.206 9.527a.654.654 0 0 1-.381-.591v-.845a5.644 5.644 0 0 0 .958-1.688.99.99 0 0 0 .607-.904v-1a.976.976 0 0 0-.26-.656v-1.33c.014-.138.071-.956-.546-1.631-.536-.586-1.405-.883-2.585-.883-1.179 0-2.049.297-2.585.882-.617.676-.56 1.494-.545 1.632v1.33a.967.967 0 0 0-.261.656v1c0 .304.144.588.39.777.239.907.739 1.59.914 1.809v.827a.655.655 0 0 1-.359.58l-2.328 1.217c-.756.396-1.226 1.154-1.226 1.98v.81c0 1.186 3.925 1.5 6 1.5 2.076 0 6-.314 6-1.5v-.761c0-.86-.498-1.632-1.301-2.017z"/>
+								</svg>
+							</span>
+							Войти в личный кабинет
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="middle-header">
+				<div class="container">
+					<div class="location">
+						<p class="location__p">
+							Ваш город:
+						</p>
+						<a href="" class="location-link">
+							Киев
+						</a>
+						<div class="location__yes-no">
+							<div class="location__yes-no-triangle"></div>
+							<form class="location__yes-no-form">
+								<button class="location__yes">
+									Да
+								</button>
+								<button class="location__no">
+									Нет, выбрать другой город
+								</button>
+							</form>
+						</div>
+					</div>
+					<nav class="middle-header-menu">
+						<li class="middle-header-menu__item">
+							<a href="#" class="middle-header-menu__link">
+								О КОМПАНИИ
+							</a>
+						</li>
+						<li class="middle-header-menu__item">
+							<a href="#" class="middle-header-menu__link">
+								РОЗНИЧНЫМ ПОКУПАТЕЛЯМ
+							</a>
+						</li>
+						<li class="middle-header-menu__item">
+							<a href="#" class="middle-header-menu__link">
+								ОПТОВЫМ ПОКУПАТЕЛЯМ
+							</a>
+						</li>
+						<li class="middle-header-menu__item">
+							<a href="#" class="middle-header-menu__link">
+								ПОСТАВЩИКАМ
+							</a>
+						</li>
+						<li class="middle-header-menu__item">
+							<a href="#" class="middle-header-menu__link">
+								КОНТАКТЫ
+							</a>
+						</li>
+					</nav>
+				</div>
+			</div>
+			<div class="lower-header">
+				<div class="container">
+					<div class="lower-header-elem">
+						<a href="#" class="logo-link">
+							<img alt="Ruges Logo">
+						</a>
+					</div>
+					<button class="middle-header__hamb-menu">
+						<span class="middle-header__hamb-menu-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+							    <path fill="gray" fill-rule="evenodd" d="M-.002 15.999v-2h24.001v2H-.002zm0-9h24.001v2H-.002v-2zm0-7h24.001v2H-.002v-2z"/>
+							</svg>
+						</span>
+					</button>
+					<form name="search" method="post" class="lower-header-form">
+						<div class="lower-header-form__icon">
+							<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="19px" height="18px">
+								<path fill-rule="evenodd"  fill="rgb(128, 128, 128)"
+							 d="M17.843,17.082 L13.468,12.707 C14.642,11.358 15.352,9.598 15.352,7.674 C15.352,3.440 11.907,-0.000 7.675,-0.000 C3.440,-0.000 -0.001,3.444 -0.001,7.674 C-0.001,11.905 3.444,15.349 7.675,15.349 C9.599,15.349 11.360,14.639 12.709,13.465 L17.085,17.840 C17.188,17.944 17.328,18.000 17.463,18.000 C17.599,18.000 17.739,17.948 17.843,17.840 C18.050,17.632 18.050,17.289 17.843,17.082 ZM1.073,7.674 C1.073,4.034 4.035,1.077 7.672,1.077 C11.312,1.077 14.270,4.038 14.270,7.674 C14.270,11.310 11.312,14.276 7.672,14.276 C4.035,14.276 1.073,11.314 1.073,7.674 Z"/>
+							</svg>
+						</div>
+						<input type="text" class="input-search" placeholder="Введите название товара">
+						<input type="button" value="Найти" class="input-search-btn">
+					</form>
+					<button class="basket">
+						<div class="basket-icons">
+							<span class="basket-arrow"></span>
+							<span class="basket-icon">
+								<svg 
+	 xmlns="http://www.w3.org/2000/svg"
+	 xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="30px" height="27px">
+									<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+									 d="M29.144,10.467 L27.612,10.467 L27.605,10.467 L26.928,10.467 L17.650,0.278 C17.336,-0.067 16.795,-0.095 16.445,0.215 C16.096,0.525 16.068,1.060 16.382,1.405 L24.633,10.467 L5.401,10.467 L13.624,1.405 C13.937,1.060 13.909,0.525 13.560,0.215 C13.211,-0.095 12.669,-0.067 12.356,0.278 L3.099,10.467 L2.415,10.467 L2.415,10.467 L0.854,10.467 C0.384,10.467 -0.001,10.847 -0.001,11.312 C-0.001,11.776 0.384,12.157 0.854,12.157 L1.731,12.157 L4.196,23.515 C4.588,25.465 6.334,26.881 8.351,26.881 L17.693,26.881 C18.163,26.881 18.548,26.500 18.548,26.036 C18.548,25.571 18.163,25.190 17.693,25.190 L8.351,25.190 C7.146,25.190 6.106,24.346 5.871,23.177 C5.871,23.170 5.871,23.170 5.871,23.163 L3.484,12.157 L26.565,12.157 L25.581,16.917 C25.488,17.375 25.787,17.818 26.251,17.917 C26.308,17.931 26.365,17.931 26.422,17.931 C26.821,17.931 27.177,17.656 27.256,17.255 L28.310,12.157 L29.144,12.157 C29.614,12.157 29.999,11.776 29.999,11.312 C29.999,10.847 29.614,10.467 29.144,10.467 Z"/>
+								</svg>
+							</span>
+							<div class="basket-round-counter">
+								<span class="basket-round-counter__num">
+									2
+								</span>
+							</div>
+						</div>
+						<div class="basket-text">
+							<p class="basket__p-one">
+								В корзине 
+								<span class="basket__text_bold">
+									2
+								</span>
+								товара
+							</p>
+							<p class="basket__p-two">
+								на сумму 
+								<span class="basket__text_bold">	1650 
+								</span>
+								р.
+							</p>
+						</div>
+					</button>
+				</div>
+			</div>
+<!-- Here start ITEM markup for header -->
+			<div class="lowest-header">
+				<div class="container">
+					<div class="header-breadcrumbs">
+							<ul class="header-breadcrumbs-list">
+								<li class="header-breadcrumbs__item">
+									<a href="#" class="header-breadcrumbs__link">
+										Главная 
+									</a>
+								</li>
+								<li class="header-breadcrumbs__item">
+									<a href="#" class="header-breadcrumbs__link">
+										Товары для автомобиля 
+									</a>	
+								</li>
+								<li class="header-breadcrumbs__item">
+									<a href="#" class="header-breadcrumbs__link">
+										держатель для смартфона "Сусанин"
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="item-assessment">
+							<div class="stars-wrap">
+								<input id="rate1" type="radio" name="stars" value="1">
+								<input id="rate2" type="radio" name="stars" value="2">
+								<input id="rate3" type="radio" name="stars" value="3">
+								<input id="rate4" type="radio" name="stars" value="4">
+								<input id="rate5" type="radio" name="stars" value="5">
+								<ul class="stars">
+									<li title="1" class="stars__item">
+										<label for="rate1">
+											<span class="star_icon"></span>
+										</label>
+									</li>
+									<li title="2" class="stars__item">
+										<label for="rate2">
+											<span class="star_icon"></span>
+										</label>
+									</li>
+									<li title="3" class="stars__item">
+										<label for="rate3">
+											<span class="star_icon"></span>
+										</label>
+									</li>
+									<li title="4" class="stars__item">
+										<label for="rate4">
+											<span class="star_icon"></span>
+										</label>
+									</li>
+									<li title="5" class="stars__item">
+										<label for="rate5">
+											<span class="star_icon"></span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="article-review">
+								<span class="article-review__icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21">
+									    <path fill="none" stroke="#D9D9D9" stroke-width="2" d="M4.97 19.004a.272.272 0 0 1-.272-.278v-3.959C2.31 13.503.999 11.288.999 8.513c0-4.288 3.869-7.522 9-7.522s9 3.234 9 7.522-3.869 7.521-9 7.521c-.169 0-.334-.009-.5-.019h-.011L5.12 18.959a.27.27 0 0 1-.15.045z"/>
+									</svg>
+								</span>
+								<div class="article-review">
+									<span class="article-review__num">
+										3
+									</span>
+									<span class="article-review__text">
+										отзыва
+									 </span>
+								</div>
+							</div>
+							<div class="article-share">
+								<span class="article-share__icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+									    <path fill="none" stroke="#D9D9D9" stroke-width="2" d="M7.263 11.057A3.2 3.2 0 0 0 7.26 8.93m4.95-2.758a3.22 3.22 0 0 0 2.557 1.263 3.225 3.225 0 0 0 3.224-3.218A3.223 3.223 0 0 0 14.767 1a3.223 3.223 0 0 0-3.224 3.217c0 .374.064.733.184 1.065L6.78 8.041a3.21 3.21 0 0 0-2.557-1.264A3.226 3.226 0 0 0 .999 9.995a3.227 3.227 0 0 0 5.789 1.951l4.95 2.763a3.212 3.212 0 0 0-.187 1.072 3.223 3.223 0 1 0 6.448 0 3.227 3.227 0 0 0-5.782-1.962"/>
+									</svg>
+								</span>
+								<span class="article-share__text">
+									Поделиться
+								</span>
+						</div>
+					</div>
+				</div>
+			</div>				
+<!-- End of ITEM page part for HEADER -->
+		</header>
+	</div>
+
+<!-- Here start ITEM markup MAIN SECTION -->
+	<section class="article-section clearfix">
+		<div class="container">
+			<div class="article-section-left-right__wrap clearfix">
+				<div class="article-section-left">
+					<div class="article-display clearfix">
+						<ul class="article-display__small-pics">
+							<li class="article-display__small-pics-item article-display__small-pics-item_active" style="background-image: URL(/build/assets/images/item2_001.jpg)">
+								<a href="#" class="article-display__small-pics-link"></a>
+							</li>
+							<li class="article-display__small-pics-item" style="background-image: URL(/build/assets/images/item2_002.jpg)">
+								<a href="#" class="article-display__small-pics-link"></a>
+							</li>
+							<li class="article-display__small-pics-item" style="background-image: URL(/build/assets/images/item2_003.jpg)">
+								<a href="#" class="article-display__small-pics-link"></a>
+							</li>
+							<li class="article-display__small-pics-item" style="background-image: URL(/build/assets/images/item2_004.jpg)">
+								<a href="#" class="article-display__small-pics-link"></a>
+							</li>
+						</ul>
+						<div class="article-display__big-pic" style="background-image: URL(/build/assets/images/item2_000.jpg)"></div>
+					</div>
+					<div class="gift">
+						<span class="gift__title">
+							+Подарок на выбор
+						</span>
+						<ul class="gift-list">
+							<li class="gift__item" style="background-image: URL(/build/assets/images/gift_01.jpg)">
+								<a href="#" class="gift__link" title="столик раскладной Фантом"></a>
+							</li>
+							<li class="gift__item" style="background-image: URL(/build/assets/images/gift_02.jpg)">
+								<a href="#" class="gift__link"></a>
+							</li>
+							<li class="gift__item" style="background-image: URL(/build/assets/images/gift_03.jpg)">
+								<a href="#" class="gift__link"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="article-section-right">
+					<div class="article-descr">
+						<div class="article-descr__title">
+							<p class="article-descr__title-p">
+								Держатель для смартфона "Сусанин"
+							</p>
+						</div>
+						<div class="article-number">
+							<span class="article-number__text">
+								Артикул товара: 
+							</span>
+							<span class="article-number__code">
+								D-3
+							</span>
+						</div>
+						<div class="article__inner-staff-wrap">
+							<div class="popular-products-item__price article-descr__price">
+								<p class="popular-products-item__price-p article-descr__price-p">
+									230p.
+								</p>
+							</div>
+							<button class="article-descr__delivery-btn">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									Посчитать доставку в мой город
+								</span>
+							</button>
+							<div class="popular-products-item__quantity-counter article__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+									<div class="popular-products-item__quantity-counter-num">
+										1шт
+									</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy article__to-buy">
+								<button class="popular-products-item__to-buy-btn article__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+						<div class="article-descr-wrap">
+							<p class="article-descr__title">
+								Подходит для устройств:
+							</p>
+							<ul class="article-descr-list">
+								<li class="article-descr__item">
+									Шириной: от 10,5 до 14,5 см
+								</li>
+								<li class="article-descr__item">
+									Толщиной: до 1,2 см.
+								</li>
+								<li class="article-descr__item">
+									Вес: 24 грамма
+								</li>
+								<li class="article-descr__item">
+									Цвет: черный
+								</li>
+								<li class="article-descr__item">
+									Крепится на любой руль
+								</li>
+							</ul>
+						</div>
+						<div class="article-description">
+							<ul class="article-description-titles">
+								<li class="article-description-titles__item">
+									<a href="#" class="article-description-titles__link article-description-titles__link_active">
+										Характеристики
+									</a>
+								</li>
+								<li class="article-description-titles__item">
+									<a href="#" class="article-description-titles__link">
+										Сравнение с аналогами
+									</a>
+								</li>
+								<li class="article-description-titles__item">
+									<a href="#" class="article-description-titles__link">
+										Отзывы
+											
+									</a>
+									<div class="article-description-titles__num-circle">
+										<span class="article-description-titles__num">
+											3
+										</span>
+									</div>
+								</li>
+							</ul>
+							<ul class="article-description__content">
+								<li class="article-description__item">
+									<p class="article-description__text">
+										Найти удобное место для телефона в автомобиле не всегда просто. Слишком много условий: чтобы аппарат не падал в дороге и при резких маневрах, чтобы было легко  достать и положить, чтобы было сразу видно кто звонит, а если телефон выполняет функцию навигатора, то его должно быть просто все время видно. И еще телефон не должен отвлекать водителя от управления автомобилем!
+									</p>
+									<p class="article-description__text">
+										Держатель для смартфона «Сусанин» надежно фиксирует телефонный аппарат, защищая от скольжений, падений, ударов!  Универсален для телефонов шириной 105-145 мм.
+									</p>
+									<ol class="article-description__text-list">
+										<li class="article-description__text-item">
+											«Сусанин» легко и быстро крепится на руль, не мешает управлять автомобилем
+										</li>
+										<li class="article-description__text-item">
+											Смартфон в Держателе находится у Вас в поле зрения, не мешает обзору дороги!
+										</li>
+										<li class="article-description__text-item">
+											Держатель «Сусанин» обеспечивает удобное положение телефона, для пользования функцией навигатора!
+										</li>
+										<li class="article-description__text-item">
+											Вам не придется больше наклоняться, нащупывать и ловить телефон с Держателем «Сусанин»
+										</li>
+										<li class="article-description__text-item">
+											Можно использовать для велосипедного руля.
+										</li>
+									</ol>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/ylH_dTpPWeE" frameborder="0" allowfullscreen></iframe>
+								</li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div> <!-- article section left & right wrapper -->
+
+<!-- С ЭТИМ ТОВАРОМ РЕКОМЕНДУЮТ -->
+			<article class="recommended-merch">
+				<div class="popular-products-title article-products-title">
+					<p class="popular-products-title__p article-products-title__p">
+						С этим товаром рекомендуют
+					</p>
+				</div>
+				<ul class="popular-products-list clearfix">
+					<li class="popular-products-item">
+						<div class="popular-products-item-container" style="background-image: URL(./assets/images/pillow.jpg)">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container" style="background-image: URL(./assets/images/pillow.jpg)">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container" style="background-image: URL(./assets/images/pillow.jpg)">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container" style="background-image: URL(./assets/images/pillow.jpg)">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<button class="show-more__btn">
+					Показать ещё
+				</button>
+			</article>
+<!-- ПОХОЖИЕ ТОВАРЫ -->
+			<article class="similar-merch">
+				<div class="popular-products-title">
+					<p class="popular-products-title__p">
+						Похожие товары
+					</p>
+				</div>
+				<ul class="popular-products-list clearfix">
+					<li class="popular-products-item">
+						<div class="popular-products-item-container" style="background-image: URL(./assets/images/pillow.jpg)">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container" style="background-image: URL(./assets/images/pillow.jpg)">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container" style="background-image: URL(./assets/images/pillow.jpg)">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="popular-products-item">
+						<div class="popular-products-item-container" style="background-image: URL(./assets/images/pillow.jpg)">
+							<div class="popular-products-item__title">
+								<p class="popular-products-item__title-p">
+									Подушка для шеи "Путник"
+								</p>
+							</div>
+							<a href="#" class="popular-products__quick-view">
+								<div class="popular-products__img">
+									<button class="popular-products__quick-view-btn">
+										<span class="quick-view-btn__icon"></span>
+										<span class="quick-view-btn__text">
+											Быстрый просмотр
+									</span>
+								</button>
+								</div>
+							</a>
+							<div class="popular-products-item__price">
+								<p class="popular-products-item__price-p">
+									526p.
+								</p>
+							</div>
+							<div class="popular-products-item__delivery">
+								<span class="popular-products-item__delivery-icon"></span>
+								<span class="popular-products-item__delivery-text">
+									доставка от 600p.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+								<div class="popular-products-item__quantity-counter-num">
+									1 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="popular-products-item__to-buy">
+								<button class="popular-products-item__to-buy-btn">
+									<span class="popular-products-item__to-buy-icon"></span>
+									<span class="popular-products-item__to-buy-text">
+										Купить
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="show-more__btn-wrap">
+					<button class="show-more__btn">
+						Показать ещё
+					</button>
+				</div>
+			</article>
+		</div>
+	</section>
+<!-- END of ITEM markup for MAIN SECTION -->
+
+	<footer class="footer">
+		<nav class="footer-nav">
+			<div class="container">
+				<ul class="various-list footer-various-list">
+					<li class="various-item">
+						<a class="various-link">
+							Новые поступления
+						</a>
+					</li>
+					<li class="various-item">
+						<a class="various-link">
+							Акции
+						</a>
+					</li>
+					<li class="various-item">
+						<a class="various-link">
+							Новости
+						</a>
+					</li>
+					<li class="various-item">
+						<a class="various-link">
+							Полезные статьи
+						</a>
+					</li>
+				</ul>
+				<ul class="footer-nav-list">
+					<li class="middle-header-menu__item display-bl">
+							<a href="#" class="middle-header-menu__link">
+								О компании
+							</a>
+						</li>
+						<li class="middle-header-menu__item display-bl">
+							<a href="#" class="middle-header-menu__link">
+								Розничным покупателям
+							</a>
+						</li>
+						<li class="middle-header-menu__item display-bl">
+							<a href="#" class="middle-header-menu__link">
+								Оптовым покупателям
+							</a>
+						</li>
+						<li class="middle-header-menu__item display-bl">
+							<a href="#" class="middle-header-menu__link">
+								Поставщикам
+							</a>
+						</li>
+						<li class="middle-header-menu__item display-bl">
+							<a href="#" class="middle-header-menu__link">
+								Контакты
+							</a>
+						</li>
+				</ul>
+				<ul class="footer-menu-tel-list">
+					<li class="footer-menu-tel-item">
+						<p class="footer-menu-tel-item__p">
+							Ваш город:
+						</p>
+						<a class="footer-menu-tel-item__link" href="#">
+							Киев
+						</a>
+					</li>
+					<li class="footer-menu-tel-item">
+						<p class="footer-menu-tel-item__p">
+							Розничным покупателям:
+						</p>
+						<a class="footer-menu-tel-item__link" href="tel:84952803840">
+							8 (495) 280-38-40
+						</a>
+					</li>
+					<li class="footer-menu-tel-item">
+						<p class="footer-menu-tel-item__p">
+							Оптовым покупателям:
+						</p>
+						<a class="footer-menu-tel-item__link" href="tel:89266291134">
+							8 (926) 629-11-34
+						</a>
+					</li>
+					<li class="footer-menu-tel-item">
+						<a class="footer-menu-tel-item__link call-me_btn">
+							Перезвоните мне
+						</a>
+					</li>
+				</ul>
+				<ul class="login-request-list">
+					<li class="login-request__item">
+						<a href="#" class="login-link">
+							Войти в личный кабинет
+						</a>
+					</li>
+					<li class="login-request__item">
+						<button class="info-request-btn info-request-btn_simple">
+							Отправить запрос
+						</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="lowest-footer">
+			<div class="container">
+				<div class="logo-place">
+					<a href="#" class="logo-link">
+						<img alt="Ruges Logo">
+					</a>
+				</div>
+				<div class="ishop-name">
+					<p class="ishop-name__text">
+						Интернет-магазин «Ругес» 2014—2017
+					</p>
+				</div>
+				<div class="ishop-mobile">
+					<a href="#" class="ishop-mobile__link">
+						Мобильная версия
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

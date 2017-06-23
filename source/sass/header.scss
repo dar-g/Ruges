@@ -3,7 +3,8 @@
 }
 .upper-header{
 	height: 40px;
-	border: solid 1px $white-three;
+	border-top: solid 1px $white-three;
+	border-bottom: solid 1px $white-three;
 	box-sizing: border-box;
 	margin-bottom: 15px;
 }
@@ -57,6 +58,9 @@
 .location, .location__p, .location-link{
 	display: inline-block;
 	vertical-align: middle;
+}
+.location-link:visited{
+	color: black;
 }
 .location__yes-no{
 	position: absolute;
@@ -113,13 +117,15 @@
 	margin-right: 5px;
 }
 .middle-header-menu__item::before{
-	content: "●";
-	font-size: 7px;
-	color: $booger;
-	padding-right: 7px;
+	content: "";
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: $booger;
+	margin-right: 6px;
 	display: inline-block;
-	vertical-align: text-top;
-	padding-top: 5px;
+	vertical-align: middle;
+	margin-top: -6px;
 }
 .middle-header-menu__item:first-child:before{
 	content: none;
@@ -202,9 +208,13 @@
 .basket-arrow{
 	display: block;
 	position: absolute;
-	top: 7px;
-    left: -6px;
-	font-weight: bold;
+	top: 10px;
+	left: -4px;
+    width: 6px;
+    height: 6px;
+    transform: rotate(-45deg);
+    border-bottom: solid 1px white;
+    border-left: solid 1px white;
 }
 .basket-icon{
 	display: block;

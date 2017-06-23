@@ -96,9 +96,19 @@
 	color: $black;
 	font-weight: bold;
 }
-.footer-menu-tel-item__arrow{
-	font-size: 16px;
+.footer-menu-tel-item:first-child .footer-menu-tel-item__link::after{
+	content: "";
+	display: inline-block;
+	position: relative;
+	bottom: 3px;
+    left: 2px;
+    width: 4px;
+    height: 4px;
+    transform: rotate(-45deg);
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
 }
+
 .call-me_btn{
 	display: block;
 	width: 118px;

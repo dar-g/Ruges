@@ -1,0 +1,113 @@
+.location-link::after{
+	content: "";
+	display: inline-block;
+	position: relative;
+	bottom: 3px;
+    left: 2px;
+    width: 4px;
+    height: 4px;
+    transform: rotate(-45deg);
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+}
+
+.location__yes-no{
+	display: none;
+}
+
+.lower-header-elem .logo-link{
+	width: 140px;
+	margin-right: 11px;
+}
+
+.middle-header__hamb-menu{
+	display: inline-block;
+	width: 65px;
+	height: 50px;
+	border-radius: 3px;
+	background-color: $white;
+	border: solid 1px $white-three;
+	margin-right: 15px;
+    box-sizing: border-box;
+    padding: 16px 10px;
+}
+.middle-header__hamb-menu-icon{
+	display: block;
+    position: relative;
+    top: 1px;
+    right: 3px;
+}
+.middle-header__hamb-menu-icon{
+	margin-right: 5px;
+}
+.middle-header__hamb-menu-icon::after{
+	content: "";
+	display: block;
+	position: relative;
+    top: -16px;
+    right: -38px;
+    width: 6px;
+    height: 6px;
+    transform: rotate(-45deg);
+    border-bottom: solid 1px $warm-grey;
+    border-left: solid 1px $warm-grey;
+}
+
+.lowest-header{
+	min-height: 40px;
+}
+.header-breadcrumbs, .header-breadcrumbs-list, .header-breadcrumbs__item, .item-assessment, .stars-wrap, .article-review, .article-share{
+	display: inline-block;
+}
+.header-breadcrumbs{
+	max-width: 865px;
+}
+.header-breadcrumbs__item{
+	color: $warm-grey;
+}
+.header-breadcrumbs__link{
+	display: inline-block;
+	color: $warm-grey;
+}
+.header-breadcrumbs__link::after{
+	content: "—";
+	color: $white-three;
+}
+.header-breadcrumbs__item:last-child .header-breadcrumbs__link::after{
+	content: "";
+}
+
+.item-assessment{
+	float: right;
+}
+.article-review__icon, .article-review, .article-share__icon, .article-share__text{
+	display: inline-block;
+	vertical-align: middle;
+}
+.stars-wrap{
+	margin-right: 14px;
+}
+.stars-wrap input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    display: none;
+}
+.stars-wrap label{
+	cursor: pointer;
+}
+.stars__item{
+	display: inline-block;
+}
+.star_icon{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(/build/assets/images/icons/star-unchecked.png) center center no-repeat;
+}
+#rate1:checked + .rate1 .star_icon{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(/build/assets/images/icons/star-checked.png) center center no-repeat;
+}
+
