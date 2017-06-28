@@ -161,7 +161,7 @@
 					</button>
 				</div>
 			</div>
-<!-- Here start ITEM markup for header -->
+
 			<div class="lowest-header">
 				<div class="container">
 					<div class="header-breadcrumbs">
@@ -185,38 +185,18 @@
 						</div>
 						<div class="item-assessment">
 							<div class="stars-wrap">
-								<input id="rate1" type="radio" name="stars" value="1">
-								<input id="rate2" type="radio" name="stars" value="2">
-								<input id="rate3" type="radio" name="stars" value="3">
-								<input id="rate4" type="radio" name="stars" value="4">
-								<input id="rate5" type="radio" name="stars" value="5">
-								<ul class="stars">
-									<li title="1" class="stars__item">
-										<label for="rate1">
-											<span class="star_icon"></span>
-										</label>
-									</li>
-									<li title="2" class="stars__item">
-										<label for="rate2">
-											<span class="star_icon"></span>
-										</label>
-									</li>
-									<li title="3" class="stars__item">
-										<label for="rate3">
-											<span class="star_icon"></span>
-										</label>
-									</li>
-									<li title="4" class="stars__item">
-										<label for="rate4">
-											<span class="star_icon"></span>
-										</label>
-									</li>
-									<li title="5" class="stars__item">
-										<label for="rate5">
-											<span class="star_icon"></span>
-										</label>
-									</li>
-								</ul>
+								<span class="rating">
+									<input id="rating5" type="radio" name="rating" value="5">
+									<label for="rating5">5</label>
+									<input id="rating4" type="radio" name="rating" value="4">
+									<label for="rating4">4</label>
+									<input id="rating3" type="radio" name="rating" value="3">
+									<label for="rating3">3</label>
+									<input id="rating2" type="radio" name="rating" value="2" checked>
+									<label for="rating2">2</label>
+									<input id="rating1" type="radio" name="rating" value="1">
+									<label for="rating1">1</label>
+								</span>						
 							</div>
 							<div class="article-review">
 								<span class="article-review__icon">
@@ -235,8 +215,12 @@
 							</div>
 							<div class="article-share">
 								<span class="article-share__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
-									    <path fill="none" stroke="#D9D9D9" stroke-width="2" d="M7.263 11.057A3.2 3.2 0 0 0 7.26 8.93m4.95-2.758a3.22 3.22 0 0 0 2.557 1.263 3.225 3.225 0 0 0 3.224-3.218A3.223 3.223 0 0 0 14.767 1a3.223 3.223 0 0 0-3.224 3.217c0 .374.064.733.184 1.065L6.78 8.041a3.21 3.21 0 0 0-2.557-1.264A3.226 3.226 0 0 0 .999 9.995a3.227 3.227 0 0 0 5.789 1.951l4.95 2.763a3.212 3.212 0 0 0-.187 1.072 3.223 3.223 0 1 0 6.448 0 3.227 3.227 0 0 0-5.782-1.962"/>
+									<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="20px" height="21px">
+										<path fill-rule="evenodd"  stroke="rgb(217, 217, 217)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+									 d="M7.263,11.057 C7.380,10.725 7.443,10.365 7.443,9.995 C7.443,9.622 7.380,9.267 7.260,8.930 M12.210,6.172 C12.798,6.938 13.726,7.435 14.767,7.435 C16.542,7.435 17.991,5.993 17.991,4.217 C17.991,2.442 16.546,1.000 14.767,1.000 C12.989,1.000 11.543,2.442 11.543,4.217 C11.543,4.591 11.607,4.950 11.727,5.282 L6.780,8.041 C6.192,7.271 5.264,6.777 4.223,6.777 C2.448,6.777 0.999,8.220 0.999,9.995 C0.999,11.771 2.448,13.214 4.227,13.214 C5.268,13.214 6.197,12.717 6.788,11.946 L11.738,14.709 C11.619,15.045 11.551,15.407 11.551,15.781 C11.551,17.552 12.996,18.999 14.775,18.999 C16.553,18.999 17.999,17.557 17.999,15.781 C17.999,14.006 16.550,12.563 14.771,12.563 C13.734,12.563 12.809,13.057 12.217,13.819 "/>
 									</svg>
 								</span>
 								<span class="article-share__text">
@@ -246,44 +230,45 @@
 					</div>
 				</div>
 			</div>				
-<!-- End of ITEM page part for HEADER -->
 		</header>
 	</div>
 
-<!-- Here start ITEM markup MAIN SECTION -->
+
 	<section class="article-section clearfix">
 		<div class="container">
 			<div class="article-section-left-right__wrap clearfix">
 				<div class="article-section-left">
 					<div class="article-display clearfix">
 						<ul class="article-display__small-pics">
-							<li class="article-display__small-pics-item article-display__small-pics-item_active" style="background-image: URL(/build/assets/images/item2_001.jpg)">
+							<li class="article-display__small-pics-item article-display__small-pics-item_active" style="background-image: URL(../build/assets/images/item2_001.jpg)">
 								<a href="#" class="article-display__small-pics-link"></a>
 							</li>
-							<li class="article-display__small-pics-item" style="background-image: URL(/build/assets/images/item2_002.jpg)">
+							<li class="article-display__small-pics-item" style="background-image: URL(../build/assets/images/item2_002.jpg)">
 								<a href="#" class="article-display__small-pics-link"></a>
 							</li>
-							<li class="article-display__small-pics-item" style="background-image: URL(/build/assets/images/item2_003.jpg)">
+							<li class="article-display__small-pics-item" style="background-image: URL(../build/assets/images/item2_003.jpg)">
 								<a href="#" class="article-display__small-pics-link"></a>
 							</li>
-							<li class="article-display__small-pics-item" style="background-image: URL(/build/assets/images/item2_004.jpg)">
+							<li class="article-display__small-pics-item" style="background-image: URL(../build/assets/images/item2_004.jpg)">
 								<a href="#" class="article-display__small-pics-link"></a>
 							</li>
 						</ul>
-						<div class="article-display__big-pic" style="background-image: URL(/build/assets/images/item2_000.jpg)"></div>
+						<div class="article-display__big-pic" style="background-image: URL(../build/assets/images/item2_000.jpg)">
+							<a href="#" class="article-display__big-pic-link"></a>
+						</div>
 					</div>
 					<div class="gift">
 						<span class="gift__title">
 							+Подарок на выбор
 						</span>
 						<ul class="gift-list">
-							<li class="gift__item" style="background-image: URL(/build/assets/images/gift_01.jpg)">
+							<li class="gift__item" style="background-image: URL(../build/assets/images/gift_01.jpg)">
 								<a href="#" class="gift__link" title="столик раскладной Фантом"></a>
 							</li>
-							<li class="gift__item" style="background-image: URL(/build/assets/images/gift_02.jpg)">
+							<li class="gift__item" style="background-image: URL(../build/assets/images/gift_02.jpg)">
 								<a href="#" class="gift__link"></a>
 							</li>
-							<li class="gift__item" style="background-image: URL(/build/assets/images/gift_03.jpg)">
+							<li class="gift__item" style="background-image: URL(../build/assets/images/gift_03.jpg)">
 								<a href="#" class="gift__link"></a>
 							</li>
 						</ul>
@@ -419,7 +404,7 @@
 						С этим товаром рекомендуют
 					</p>
 				</div>
-				<ul class="popular-products-list clearfix">
+				<ul class="popular-products-list recommended-merch-list clearfix">
 					<li class="popular-products-item">
 						<div class="popular-products-item-container" style="background-image: URL(./assets/images/pillow.jpg)">
 							<div class="popular-products-item__title">
@@ -613,7 +598,7 @@
 						Похожие товары
 					</p>
 				</div>
-				<ul class="popular-products-list clearfix">
+				<ul class="popular-products-list similar-merch-list clearfix">
 					<li class="popular-products-item">
 						<div class="popular-products-item-container" style="background-image: URL(./assets/images/pillow.jpg)">
 							<div class="popular-products-item__title">

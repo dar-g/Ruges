@@ -87,27 +87,54 @@
 .stars-wrap{
 	margin-right: 14px;
 }
-.stars-wrap input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
-    display: none;
+.rating {
+	overflow: hidden;
+	vertical-align: bottom;
+	display: inline-block;
+	width: auto;
+	height: 15px;
+}
+.rating > input {
+	opacity: 0;
+	margin-right: -100%;
+}
+.rating > label {
+	position: relative;
+	display: block;
+	float: right;
+	background: url('../images/icons/star-unchecked.png');
+	background-size: 15px 15px;
+}
+.rating label {
+	margin-right: 5px;
+}
+.rating > label:before {
+	display: block;
+	opacity: 0;
+	content: '';
+	width: 15px;
+	height: 15px;
+	background: url('../images/icons/star-checked.png');
+	background-size: 15px 15px;
+	transition: opacity 0.2s linear;
+}
+.rating > label:hover:before,  .rating > label:hover ~ label:before,  .rating:not(:hover) > :checked ~ label:before { 
+	opacity: 1; 
 }
 .stars-wrap label{
 	cursor: pointer;
 }
-.stars__item{
-	display: inline-block;
+
+.article-review{
+	margin-right: 15px;
 }
-.star_icon{
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	background: url(/build/assets/images/icons/star-unchecked.png) center center no-repeat;
+.article-review__icon{
+	margin-right: 3px;
 }
-#rate1:checked + .rate1 .star_icon{
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	background: url(/build/assets/images/icons/star-checked.png) center center no-repeat;
+
+.article-share__icon{
+	width: 17px;
+	height: 18px;
+	margin-right: 8px;
 }
 

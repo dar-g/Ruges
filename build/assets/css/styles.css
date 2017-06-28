@@ -114,11 +114,12 @@ button, input {
   position: absolute;
   top: 44px;
   left: 0;
-  width: 218px;
+  width: 228px;
   height: 49px;
   border-radius: 3px;
   background-color: #fff8e1;
-  border: solid 1px #d7ccc8; }
+  border: solid 1px #d7ccc8;
+  z-index: 100; }
 
 .location__yes-no-triangle {
   position: absolute;
@@ -354,17 +355,18 @@ button, input {
   box-sizing: border-box; }
 
 .info-request-text {
-  margin-bottom: 22px; }
+  position: relative;
+  top: -16px; }
 
 .info-request__p {
   font-size: 18px;
   line-height: 20px;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
   text-transform: uppercase;
   color: #ffffff; }
 
 .info-request-btn {
+  position: relative;
+  bottom: 14px;
   border-style: none;
   width: 137px;
   height: 30px;
@@ -430,10 +432,6 @@ button, input {
   font-size: 30px;
   color: #1a1a1a; }
 
-.shopwindow-goods__title-p {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0; }
-
 .shopwindow-goods__title-small {
   font-size: 21px;
   color: #1a1a1a;
@@ -441,8 +439,6 @@ button, input {
 
 .shopwindow-goods__description {
   display: block;
-  -webkit-margin-before: 6px;
-  -webkit-margin-after: 0;
   width: 200px;
   height: 54px;
   font-size: 16px;
@@ -486,6 +482,7 @@ button, input {
   width: 288px;
   height: 300px;
   padding-left: 20px;
+  padding-top: 15px;
   box-sizing: border-box;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -495,7 +492,7 @@ button, input {
   background-repeat: no-repeat;
   margin-right: 0; }
 
-.shopwindow-categories__item-title-p {
+.shopwindow-categories__item-title-link {
   font-size: 21px;
   color: #1a1a1a;
   text-transform: uppercase; }
@@ -577,7 +574,7 @@ button, input {
   width: 30px;
   height: 18px;
   object-fit: contain;
-  background-image: url(/build/assets/images/icons/eye.svg);
+  background-image: url(../images/icons/eye.svg);
   vertical-align: middle;
   margin-right: 5px; }
 
@@ -629,7 +626,8 @@ button, input {
   background-color: transparent;
   border: solid 1px #44a6f5;
   border-radius: 50%;
-  color: #44a6f5; }
+  color: #44a6f5;
+  padding: 0; }
 
 .popular-products-item__quantity-counter-num {
   min-width: 40px;
@@ -658,7 +656,7 @@ button, input {
   height: 20px;
   margin-right: 5px;
   vertical-align: middle;
-  background-image: url(/build/assets/images/icons/basket-2.svg); }
+  background-image: url(../images/icons/basket-2.svg); }
 
 .popular-products-item__to-buy-text {
   color: #ffffff;
@@ -936,28 +934,53 @@ button, input {
 .stars-wrap {
   margin-right: 14px; }
 
-.stars-wrap input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-  display: none; }
+.rating {
+  overflow: hidden;
+  vertical-align: bottom;
+  display: inline-block;
+  width: auto;
+  height: 15px; }
+
+.rating > input {
+  opacity: 0;
+  margin-right: -100%; }
+
+.rating > label {
+  position: relative;
+  display: block;
+  float: right;
+  background: url("../images/icons/star-unchecked.png");
+  background-size: 15px 15px; }
+
+.rating label {
+  margin-right: 5px; }
+
+.rating > label:before {
+  display: block;
+  opacity: 0;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url("../images/icons/star-checked.png");
+  background-size: 15px 15px;
+  transition: opacity 0.2s linear; }
+
+.rating > label:hover:before, .rating > label:hover ~ label:before, .rating:not(:hover) > :checked ~ label:before {
+  opacity: 1; }
 
 .stars-wrap label {
   cursor: pointer; }
 
-.stars__item {
-  display: inline-block; }
+.article-review {
+  margin-right: 15px; }
 
-.star_icon {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: url(/build/assets/images/icons/star-unchecked.png) center center no-repeat; }
+.article-review__icon {
+  margin-right: 3px; }
 
-#rate1:checked + .rate1 .star_icon {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: url(/build/assets/images/icons/star-checked.png) center center no-repeat; }
+.article-share__icon {
+  width: 17px;
+  height: 18px;
+  margin-right: 8px; }
 
 .article-section {
   border-top: 1px solid #e6e6e6;
@@ -967,7 +990,7 @@ button, input {
   margin-bottom: 50px; }
 
 .article-section-left {
-  width: 500px; }
+  max-width: 600px; }
 
 .article-section-left, .article-section-right {
   float: left; }
@@ -1001,9 +1024,14 @@ button, input {
 .article-display__big-pic {
   width: 300px;
   height: 550px;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat no-repeat;
+  background-size: contain;
   margin-right: 50px; }
+
+.article-display__big-pic-link {
+  display: block;
+  height: 100%; }
 
 .gift {
   width: 300px;
@@ -1091,7 +1119,7 @@ button, input {
   box-shadow: 0px 10px 20px 0 rgba(139, 195, 74, 0.26), 0px 10px 15px 0 rgba(139, 195, 74, 0.36), inset 0px -2px 0 0 #7cb342; }
 
 .article-descr-list {
-  list-style-image: url(/build/assets/images/icons/checked.svg);
+  list-style-image: url(../images/icons/checked.svg);
   margin: 0 0 35px 20px; }
 
 .article-descr__item {
@@ -1140,6 +1168,9 @@ button, input {
 
 .article-description__text-list {
   margin-left: -20px; }
+
+.recommended-merch-list, .similar-merch-list {
+  margin-bottom: 18px; }
 
 .show-more__btn {
   display: block;
