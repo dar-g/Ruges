@@ -1,0 +1,138 @@
+.checkout__form{
+	float: left;
+	width: 430px;
+}
+.checkout__title{
+	margin-bottom: 40px;
+}
+.checkout__subtitle{
+	margin-bottom: 38px;
+}
+.checkout__subtitle-text{
+	display: inline-block;
+	vertical-align: middle;
+	/*font-family: Roboto;*/
+	font-size: 14px;
+	color: $warm-grey;
+	margin-right: 10px;
+}
+.checkout__subtitle-decor{
+	display: inline-block;
+	vertical-align: middle;
+	width: 251px;
+	height: 1px;
+	background-color: $white-three;
+}
+.checkout__subtitle-decor2{
+	width: 308px;
+}
+.checkout__comment-input{
+	height: 80px;
+}
+.checkout__submit{
+
+}
+.checkout__warning{
+	/*font-family: Roboto;*/
+	font-size: 12px;
+	color: $warm-grey;
+}
+
+.checkout__basket{
+	float: right;
+	width: 600px;
+}
+.checkout__basket-title{
+	margin-bottom: 40px;
+}
+.checkout__basket-title-text{
+	float: left;
+	/*font-family: ProximaNova;*/
+	font-size: 20px;
+	color: $black;
+}
+.checkout__basket-edit{
+	float: right;
+	width: 115px;
+	height: 24px;
+	border-radius: 3px;
+	background-color: $white-two;
+	box-sizing: border-box;
+}
+.checkout__basket-edit-icon, .checkout__basket-edit-link{
+	display: inline-block;
+	line-height: 24px;
+}
+.checkout__basket-edit-link{
+	font-size: 12px;
+	color: $warm-grey;
+	padding: 0 10px;
+}
+
+.checkout__basket-item{
+	margin-bottom: 20px;
+}
+.checkout__basket-item-pic, .checkout__basket-gift-pic{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 20px 0 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    border: solid 1px $white-three;
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+}
+.checkout__basket-item-pic-link, .checkout__basket-gift-link{
+	display: block;
+    height: 100%;
+}
+.checkout__basket-item-title{
+	display: inline-block;
+	vertical-align: middle;
+	width: 260px;
+	margin-right: 60px;
+}
+.checkout__basket-item-num{
+	display: inline-block;
+	vertical-align: middle;	
+	width: 40px;
+}
+.checkout__basket-item-price{
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+}
+
+.checkout__basket-gift{
+	margin-bottom: 10px;
+}
+.checkout__basket-gift-item{
+	margin-bottom: 20px;
+}
+.checkout__basket-gift-pic, .checkout__basket-gift-title{
+	display: inline-block;
+	vertical-align: middle;
+}
+.checkout__basket-total-wrap{
+	border-top: 1px solid $white-three;
+	padding-top: 20px;
+}
+.checkout__basket-order, .checkout__basket-delivery{
+	color: $warm-grey;
+	line-height: 20px;
+}
+.checkout__basket-total{
+	font-family: $bold;
+	font-size: 18px;
+	line-height: 30px;
+}
+.checkout__basket-order-sum-text, .checkout__basket-delivery-sum-text, .checkout__basket-total-sum-text{
+	display: block;
+	float: left;
+}
+.checkout__basket-order-sum, .checkout__basket-order-sum-currency, .checkout__basket-delivery-sum, .checkout__basket-delivery-sum-currency, .checkout__basket-total-sum, .checkout__basket-total-sum-currency{
+	display: block;
+	float: right;
+}

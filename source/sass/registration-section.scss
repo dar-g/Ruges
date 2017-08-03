@@ -56,11 +56,6 @@
 .registration__input_blank{
 	border: solid 1px #f44336;
 }
-.registration__input_blank:after{
-	content: "####";
-	color: #f44336;
-	font-size: 12px;
-}
 .registration__submit{
 	width: 302px;
 	height: 40px;
@@ -68,4 +63,9 @@
 	color: $white;
 	background-color: $booger;
 	border-style: none;
+	box-shadow: 0px 10px 20px 0 rgba(139, 195, 74, 0.26), 0px 10px 15px 0 rgba(139, 195, 74, 0.36), inset 0px -2px 0 0 #7cb342;
+}
+.registration__submit:hover{
+	background-color: #9CCC65;
+    transition: background-color 0.3s;
 }

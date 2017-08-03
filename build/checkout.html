@@ -156,32 +156,31 @@
 			</div>
 		</header>
 		
-		<section class="registration__wrap">
+		<section class="checkout__wrap registration__wrap clearfix">
 			<div class="container">
-				<form action="post" class="registration__form clearfix">
-					<div class="registration__title">
-						<span class="registration__title-text">
-							РЕГИСТРАЦИЯ
+				<form action="post" class="checkout__form registration__form clearfix">
+					<div class="checkout__title registration__title">
+						<span class="checkout__title-text registration__title-text">
+							ОФОРМЛЕНИЕ ЗАКАЗА
 						</span>
 					</div>
-					<div class="registration__type">
-						<ul class="registration__type-list">
-							<li class="registration__type-item">
-								<a href="#" class="registration__type-link registration__type-link_active">
-									Физ.лицо
-								</a>
-							</li>
-							<li class="registration__type-item">
-								<a href="#" class="registration__type-link">
-									Индивидуальный Предприниматель
-								</a>
-							</li>
-							<li class="registration__type-item">
-								<a href="#" class="registration__type-link">
-									Юр.лицо, ООО и пр.
-								</a>
-							</li>
-						</ul>
+					<div class="checkout__subtitle">
+						<div class="checkout__subtitle-text">
+							Ваши контактные данные
+						</div>
+						<div class="checkout__subtitle-decor"></div>
+					</div>
+					<div class="registration__field-wrap">
+						<label for="name" class="registration__name-label registration__label asterisk">
+							ФИО
+						</label>
+						<input type="text" id="name" class="registration__name-input registration__input">
+					</div>
+					<div class="registration__field-wrap">
+						<label for="telnumber" class="registration__tel-num-label registration__label asterisk">
+							Телефон
+						</label>
+						<input type="tel" id="telnumber" class="registration__tel-num-input registration__input" placeholder="+7(099)123-45-67">
 					</div>
 					<div class="registration__field-wrap">
 						<label for="email" class="registration__email-label registration__label asterisk">
@@ -189,58 +188,154 @@
 						</label>
 						<input type="email" id="email" class="registration__email-input registration__input">
 					</div>
-					<div class="registration__field-wrap">
-						<label for="password" class="registration__pass-label registration__label asterisk">
-							Пароль
-						</label>
-						<input type="password" id="password" class="registration__pass-input registration__input">
-					</div>
-					<div class="registration__field-wrap">
-						<label for="name" class="registration__name-label registration__label asterisk">
-							ФИО плательщика
-						</label>
-						<input type="text" id="name" class="registration__name-input registration__input">
-					</div>
-					<div class="registration__field-wrap">
-						<label for="passport" class="registration__passport-label registration__label asterisk">
-							Паспортные данные плательщика
-						</label>
-						<input type="text" id="passport" class="registration__passport-input registration__input registration__input_blank">
-					</div>
-					<div class="registration__field-wrap">
-						<label for="telnumber" class="registration__tel-num-label registration__label">
-							Телефон плательщика
-						</label>
-						<input type="tel" id="telnumber" class="registration__tel-num-input registration__input" placeholder="+38">
-					</div>
-					<div class="registration__field-wrap">
-						<label for="delivery-address" class="registration__delivery-address-label registration__label">
+					<div class="checkout__subtitle">
+						<div class="checkout__subtitle-text">
 							Адрес доставки
-						</label>
-						<input type="text" id="delivery-address" class="registration__delivery-address-input registration__input">
+						</div>
+						<div class="checkout__subtitle-decor checkout__subtitle-decor2"></div>
 					</div>
 					<div class="registration__field-wrap">
-						<label for="consignee-name" class="registration__consignee-name-label registration__label">
-							ФИО грузополучателя
+						<label for="city" class="checkout__city-label registration__label asterisk">
+							Город
 						</label>
-						<input type="text" id="consignee-name" class="registration__consignee-name-input registration__input">
+						<input type="text" id="city" class="checkout__city-input registration__input" placeholder="+7(099)123-45-67">
 					</div>
 					<div class="registration__field-wrap">
-						<label for="consignee-passport" class="registration__consignee-passport-label registration__label">
-							Паспортные данные грузополучателя
+						<label for="comment" class="checkout__comment-label registration__label">
+							Комментарий
 						</label>
-						<input type="text" id="consignee-passport" class="registration__consignee-passport-input registration__input">
+						<input type="text" id="comment" class="checkout__comment-input registration__input">
 					</div>
+
 					<div class="registration__field-wrap">
-						<label for="consignee-telnumber" class="registration__consignee-telnumber-label registration__label">
-							Телефон грузополучателя
-						</label>
-						<input type="tel" id="consignee-telnumber" class="registration__consignee-telnumber-input registration__input" placeholder="+38">
+						<input type="submit" id="checkout_submit" class="registration__submit checkout__submit" value="Подтвердить заказ">
 					</div>
-					<div class="registration__field-wrap">
-						<input type="submit" id="registration_submit" class="registration__submit" value="Зарегистрироваться">
+					<div class="checkout__warning">
+						* Поля, отмеченные звездочкой, обязательны к заполнению
 					</div>
 				</form>
+
+<!-- ~~~~~~ BASKET ~~~~~~ -->
+
+				<article class="checkout__basket">
+					<div class="checkout__basket-title clearfix">
+						<div class="checkout__basket-title-text">
+							В КОРЗИНЕ
+						</div>
+						<div class="checkout__basket-edit">
+							<a href="#" class="checkout__basket-edit-link">
+								<span class="checkout__basket-edit-icon">
+									<svg 
+	 xmlns="http://www.w3.org/2000/svg"
+	 xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="9px" height="10px">
+										<path fill-rule="evenodd"  fill="rgb(128, 128, 128)"
+									 d="M8.825,2.486 L3.815,7.497 C3.814,7.498 3.813,7.499 3.811,7.500 L1.500,5.188 C1.501,5.187 1.502,5.186 1.503,5.184 L6.513,0.174 C6.746,-0.058 7.122,-0.058 7.354,0.174 L8.825,1.645 C9.058,1.877 9.058,2.254 8.825,2.486 ZM0.824,8.954 C0.602,9.047 0.345,8.997 0.174,8.826 C0.003,8.655 -0.047,8.398 0.046,8.176 L0.958,6.000 L3.000,8.042 L0.824,8.954 Z"/>
+									</svg>
+								</span>
+								Редактировать
+							</a>
+						</div>
+					</div>
+					<ul class="checkout__basket-list">
+						<li class="checkout__basket-item">
+							<div class="checkout__basket-item-pic" style="background-image: URL(../build/assets/images/item2_002.jpg)">
+								<a href="#" class="checkout__basket-item-pic-link"></a>
+							</div>
+							<div class="checkout__basket-item-title">
+								Держатель для смартфона "Сусанин"
+							</div>
+							<div class="checkout__basket-item-num">
+								<span class="checkout__basket-item-number">
+									1
+								</span>
+								<span class="checkout__basket-item-num-text">
+									 шт.
+								</span>
+							</div>
+							<div class="checkout__basket-item-price">
+								<span class="checkout__basket-item-price-num">
+									230
+								</span>
+								<span class="checkout__basket-item-price-currency">
+									р.
+								</span>
+							</div>
+						</li>
+						<li class="checkout__basket-item">
+							<div class="checkout__basket-item-pic" style="background-image: URL(../build/assets/images/item2_002.jpg)">
+								<a href="#" class="checkout__basket-item-pic-link"></a>
+							</div>
+							<div class="checkout__basket-item-title">
+								Держатель для смартфона "Сусанин"
+							</div>
+							<div class="checkout__basket-item-num">
+								<span class="checkout__basket-item-number">
+									1
+								</span>
+								<span class="checkout__basket-item-num-text">
+									 шт.
+								</span>
+							</div>
+							<div class="checkout__basket-item-price">
+								<span class="checkout__basket-item-price-num">
+									230
+								</span>
+								<span class="checkout__basket-item-price-currency">
+									р.
+								</span>
+							</div>
+						</li>
+					</ul>
+					<ul class="checkout__basket-gift">
+						<span class="gift__title">
+							+Подарки
+						</span>
+						<li class="checkout__basket-gift-item">
+							<div class="checkout__basket-gift-pic" style="background-image: URL(../build/assets/images/gift_01.jpg)">
+								<a href="#" class="checkout__basket-gift-link"></a>
+							</div>
+							<div class="checkout__basket-gift-title">
+								Столик раскладной "Фантом"
+							</div>
+						</li>
+					</ul>
+					<div class="checkout__basket-total-wrap">
+						<div class="checkout__basket-order clearfix">
+							<span class="checkout__basket-order-sum-text">
+								Сумма заказа:
+							</span>
+							<span class="checkout__basket-order-sum">
+								460
+							</span>
+							<span class="checkout__basket-order-sum-currency">
+								р.
+							</span>
+						</div>
+						<div class="checkout__basket-delivery clearfix">
+							<span class="checkout__basket-delivery-sum-text">
+								Сумма доставки:
+							</span>
+							<span class="checkout__basket-delivery-sum">
+								650
+							</span>
+							<span class="checkout__basket-delivery-sum-currency">
+								р.
+							</span>
+						</div>
+						<div class="checkout__basket-total clearfix">
+							<span class="checkout__basket-total-sum-text">
+								Сумма к оплате:
+							</span>
+							<span class="checkout__basket-total-sum">
+								1100
+							</span>
+							<span class="checkout__basket-total-sum-currency">
+								р.
+							</span>
+						</div>
+					</div>
+				</article>
 			</div>
 		</section>
 	</div>
