@@ -1,0 +1,31 @@
+.delivery-calc{
+	width: 637px;
+	height: 538px;
+	border-radius: 3px;
+	padding: 30px;
+	background-color: #D0B79F;
+	box-sizing: border-box;
+}
+.delivery-calc__heading{
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.delivery-calc__heading:after{
+	content: "✖";
+	color: $pinkish-grey;
+	font-size: 20px;
+}
+.delivery-calc__item{
+	display: block;
+	margin-bottom: 10px;
+}
+.delivery-calc__item:nth-child(3), .delivery-calc__item:nth-child(4){
+	margin-bottom: 30px;
+}
+.delivery-calc__label, .delivery-calc__input-radio, .delivery-calc__label-radio{
+	float: left;
+}
+.delivery-calc__input, .delivery-calc__select{
+	float: right;
+}
