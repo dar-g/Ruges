@@ -1290,7 +1290,32 @@ button, input {
   font-size: 14px;
   font-weight: bold; }
 
-.registration__input {
+.registration__category-title-wrap {
+  width: 100%; }
+
+.registration__category-title {
+  display: inline-block;
+  vertical-align: middle;
+  color: #808080;
+  padding-right: 5px; }
+
+.registration__category-title-decor, .registration__category-title-decor2, .registration__category-title-decor3 {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #e6e6e6;
+  width: 491px;
+  height: 1px; }
+
+.registration__category-title-decor2 {
+  width: 460px; }
+
+.registration__category-title-decor3 {
+  width: 467px; }
+
+.registration__passport-series-label {
+  margin-right: 4px; }
+
+.registration__input, .registration__country-select, .registration__region-select {
   float: right;
   width: 302px;
   height: 40px;
@@ -1301,9 +1326,42 @@ button, input {
 .registration__input_blank {
   border: solid 1px #f44336; }
 
+.registration__passport-series-input {
+  width: 110px;
+  margin-right: 10px; }
+
+.registration__passport-num-input {
+  width: 182px; }
+
+.copy-payer-data-btn {
+  float: right;
+  border-style: none;
+  background-color: transparent; }
+
+.copy-payer-data-text, .copy-payer-data-arrow {
+  color: #8bc34a;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px; }
+
+.copy-payer-data-arrow {
+  display: block;
+  position: relative;
+  top: 8px;
+  right: 14px;
+  width: 5px;
+  height: 5px;
+  transform: rotate(-45deg);
+  border-bottom: solid 1.4px #8bc34a;
+  border-left: solid 1.4px #8bc34a; }
+
+.captcha-wrap {
+  width: 302px;
+  height: 80px; }
+
 .registration__submit {
   display: block;
-  margin: 0 auto;
+  float: right;
   width: 302px;
   height: 40px;
   border-radius: 3px;
@@ -1346,6 +1404,9 @@ button, input {
 
 .checkout__comment-input {
   height: 80px; }
+
+.checkout__submit {
+  float: right; }
 
 .checkout__warning {
   /*font-family: Roboto;*/
@@ -1410,12 +1471,13 @@ button, input {
 .checkout__basket-item-num {
   display: inline-block;
   vertical-align: middle;
-  width: 40px; }
+  width: 70px; }
 
 .checkout__basket-item-price {
   display: inline-block;
   vertical-align: middle;
-  width: 50px; }
+  text-align: right;
+  width: 90px; }
 
 .checkout__basket-gift {
   margin-bottom: 10px; }
@@ -1444,8 +1506,7 @@ button, input {
   display: block;
   float: left; }
 
-.checkout__basket-order-sum, .checkout__basket-order-sum-currency, .checkout__basket-delivery-sum, .checkout__basket-delivery-sum-currency, .checkout__basket-total-sum, .checkout__basket-total-sum-currency {
-  display: block;
+.checkout__basket-order-sum-wrap {
   float: right; }
 
 .delivery-calc {

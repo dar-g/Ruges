@@ -30,7 +30,7 @@
 	height: 80px;
 }
 .checkout__submit{
-
+	float: right;
 }
 .checkout__warning{
 	/*font-family: Roboto;*/
@@ -97,12 +97,13 @@
 .checkout__basket-item-num{
 	display: inline-block;
 	vertical-align: middle;	
-	width: 40px;
+	width: 70px;
 }
 .checkout__basket-item-price{
 	display: inline-block;
 	vertical-align: middle;
-	width: 50px;
+	text-align: right;
+	width: 90px;
 }
 
 .checkout__basket-gift{
@@ -132,7 +133,6 @@
 	display: block;
 	float: left;
 }
-.checkout__basket-order-sum, .checkout__basket-order-sum-currency, .checkout__basket-delivery-sum, .checkout__basket-delivery-sum-currency, .checkout__basket-total-sum, .checkout__basket-total-sum-currency{
-	display: block;
+.checkout__basket-order-sum-wrap{
 	float: right;
 }
