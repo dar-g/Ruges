@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1920px">
+	<title>Интернет-магазин «Ругес» - Регистрация</title>
+	<link rel="stylesheet" href="../build/assets/css/normalize.css">
+	<link rel="stylesheet" href="../build/assets/css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="request-wrap">
+			<a href="#" class="close"></a>
+			<form name="request" method="post" class="request-form">
+				<div class="request-title">
+					<span class="request-title-text">
+						ВЫБЕРИТЕ ТИП ЗАПРОСА					
+					</span>
+				</div>
+				<div class="registration__type request__type">
+					<ul class="registration__type-list request__type-list">
+						<li class="registration__type-item request__type-item">
+							<a href="#" class="registration__type-link registration__type-link_active request__type-link request__type-link_active">
+								Получить оптовые цены
+							</a>
+						</li>
+						<li class="registration__type-item request__type-item">
+							<a href="#" class="registration__type-link request__type-link">
+								Сделать коммерческое предложение
+							</a>
+						</li>
+						<li class="registration__type-item request__type-item">
+							<a href="#" class="registration__type-link request__type-link">
+								Другое
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="registration__field-wrap request__field-wrap clearfix">
+					<label for="name" class="registration__name-label registration__label asterisk">
+						Имя
+					</label>
+					<input type="text" id="name" class="request__name-input registration__input">
+				</div>
+				<div class="registration__field-wrap request__field-wrap clearfix">
+					<label for="email" class="request__email-label registration__label asterisk">
+						E-mail
+					</label>
+					<input type="email" id="email" class="request__email-input registration__input">
+				</div>
+				<div class="registration__field-wrap request__field-wrap clearfix">
+					<label for="telnumber" class="request__tel-num-label registration__label asterisk">
+						Телефон
+					</label>
+					<input type="tel" id="telnumber" class="request__tel-num-input registration__input" placeholder="+7">
+				</div>
+				<div class="registration__field-wrap request__field-wrap clearfix">
+					<label for="comment" class="request__comment-label registration__label">
+						Комментарий
+					</label>
+					<textarea name="comment" id="comment" class="request__comment registration__input">
+						Запрос на получение прайс-листа
+					</textarea>
+				</div>
+
+				<div class="registration__field-wrap clearfix">
+					<div class="captcha-wrap">
+						
+					</div>
+				</div>
+
+				<div class="registration__field-wrap request__field-wrap clearfix">
+					<input type="submit" id="send-request" class="registration__submit request__submit" value="Отправить запрос">
+				</div>
+			</form>	
+		</div>
+	</div>
+</body>
+</html>

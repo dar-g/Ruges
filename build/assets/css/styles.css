@@ -1509,33 +1509,52 @@ button, input {
 .checkout__basket-order-sum-wrap {
   float: right; }
 
-.delivery-calc {
-  width: 637px;
-  height: 538px;
-  border-radius: 3px;
+.request-wrap {
+  width: 550px;
+  height: 552px;
   padding: 30px;
-  background-color: #D0B79F;
-  box-sizing: border-box; }
+  border-radius: 3px;
+  box-shadow: -1px 22px 31px 5px rgba(0, 0, 0, 0.23);
+  /*box-sizing: border-box;*/ }
 
-.delivery-calc__heading {
-  font-size: 20px;
-  text-transform: uppercase;
+.request-form {
+  font-size: 12px; }
+
+.request-title {
   margin-bottom: 30px; }
 
-.delivery-calc__heading:after {
-  content: "✖";
-  color: #cccccc;
-  font-size: 20px; }
+.request-title-text {
+  font-size: 14px;
+  font-weight: bold; }
 
-.delivery-calc__item {
-  display: block;
-  margin-bottom: 10px; }
+.close {
+  position: relative;
+  left: 542px;
+  top: -20px;
+  width: 14px;
+  height: 14px;
+  opacity: 0.3; }
 
-.delivery-calc__item:nth-child(3), .delivery-calc__item:nth-child(4) {
-  margin-bottom: 30px; }
+.close:hover {
+  opacity: 1; }
 
-.delivery-calc__label, .delivery-calc__input-radio, .delivery-calc__label-radio {
-  float: left; }
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #808080; }
 
-.delivery-calc__input, .delivery-calc__select {
-  float: right; }
+.close:before {
+  transform: rotate(45deg); }
+
+.close:after {
+  transform: rotate(-45deg); }
+
+.request__field-wrap {
+  width: 70%; }
+
+.request__comment {
+  height: 80px;
+  line-height: 16px; }

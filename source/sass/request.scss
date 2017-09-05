@@ -1,0 +1,52 @@
+.request-wrap{
+	width: 550px;
+	height: 552px;
+	padding: 30px;
+	border-radius: 3px;
+	box-shadow: -1px 22px 31px 5px rgba(0,0,0,0.23);
+	/*box-sizing: border-box;*/
+}
+.request-form{
+	font-size: 12px;
+}
+.request-title{
+	margin-bottom: 30px;
+}
+.request-title-text{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.close {
+	position: relative;
+	left: 542px;
+    top: -20px;
+	width: 14px;
+	height: 14px;
+	opacity: 0.3;
+}
+.close:hover {
+	opacity: 1;
+}
+.close:before, .close:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 20px;
+	width: 2px;
+	background-color: $warm-grey;
+}
+.close:before {
+	transform: rotate(45deg);
+}
+.close:after {
+	transform: rotate(-45deg);
+}
+
+.request__field-wrap{
+	width: 70%;
+}
+.request__comment{
+	height: 80px;
+	line-height: 16px;
+}
