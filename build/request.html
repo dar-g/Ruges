@@ -10,9 +10,9 @@
 </head>
 <body>
 	<div class="container">
-		<div class="request-wrap">
-			<a href="#" class="close"></a>
-			<form name="request" method="post" class="request-form">
+		<div class="request-outer">
+			<div class="request-wrap">
+				<a href="#" class="close"></a>
 				<div class="request-title">
 					<span class="request-title-text">
 						ВЫБЕРИТЕ ТИП ЗАПРОСА					
@@ -37,44 +37,70 @@
 						</li>
 					</ul>
 				</div>
-				<div class="registration__field-wrap request__field-wrap clearfix">
-					<label for="name" class="registration__name-label registration__label asterisk">
-						Имя
-					</label>
-					<input type="text" id="name" class="request__name-input registration__input">
-				</div>
-				<div class="registration__field-wrap request__field-wrap clearfix">
-					<label for="email" class="request__email-label registration__label asterisk">
-						E-mail
-					</label>
-					<input type="email" id="email" class="request__email-input registration__input">
-				</div>
-				<div class="registration__field-wrap request__field-wrap clearfix">
-					<label for="telnumber" class="request__tel-num-label registration__label asterisk">
-						Телефон
-					</label>
-					<input type="tel" id="telnumber" class="request__tel-num-input registration__input" placeholder="+7">
-				</div>
-				<div class="registration__field-wrap request__field-wrap clearfix">
-					<label for="comment" class="request__comment-label registration__label">
-						Комментарий
-					</label>
-					<textarea name="comment" id="comment" class="request__comment registration__input">
-						Запрос на получение прайс-листа
-					</textarea>
-				</div>
-
-				<div class="registration__field-wrap clearfix">
-					<div class="captcha-wrap">
-						
+				<form name="request" method="post" class="request-form">
+					<div class="registration__field-wrap request__field-wrap clearfix">
+						<label for="name" class="registration__name-label registration__label asterisk">
+							Имя
+						</label>
+						<input type="text" id="name" class="request__name-input registration__input">
 					</div>
-				</div>
+					<div class="registration__field-wrap request__field-wrap clearfix">
+						<label for="email" class="request__email-label registration__label asterisk">
+							E-mail
+						</label>
+						<input type="email" id="email" class="request__email-input registration__input">
+					</div>
+					<div class="registration__field-wrap request__field-wrap clearfix">
+						<label for="telnumber" class="request__tel-num-label registration__label asterisk">
+							Телефон
+						</label>
+						<input type="tel" id="telnumber" class="request__tel-num-input registration__input" placeholder="+7">
+					</div>
+					<div class="registration__field-wrap request__field-wrap clearfix">
+						<label for="message" class="request__message-label registration__label">
+							Сообщение
+						</label>
+						<textarea name="message" id="message" class="request__message registration__input">
+							Запрос на получение прайс-листа
+						</textarea>
+					</div>
 
-				<div class="registration__field-wrap request__field-wrap clearfix">
-					<input type="submit" id="send-request" class="registration__submit request__submit" value="Отправить запрос">
+					<div class="registration__field-wrap clearfix">
+						<div class="captcha-wrap">
+							
+						</div>
+					</div>
+
+					<div class="registration__field-wrap request__field-wrap clearfix">
+						<input type="submit" id="send-request" class="registration__submit request__submit" value="Отправить запрос">
+					</div>
+				</form>	
+			</div>
+
+<!-- REQUEST SENT block -->
+			<div class="request-sent">
+				<a href="#" class="close"></a>
+				<div class="icon-border">
+					<span class="icon-checked">
+						
+					</span>
 				</div>
-			</form>	
-		</div>
-	</div>
+				<div class="request-sent__title">
+					<span class="request-title-text">
+						ЗАПРОС ОТПРАВЛЕН!
+					</span>
+				</div>
+				<div class="request-sent__message">
+					<span class="request-sent__message-text">
+						Скоро наш менеджер свяжется с вами
+					</span>
+				</div>
+				<button class="continue-btn registration__submit">
+					Продолжить
+				</button>
+			</div>
+
+		</div> <!-- request-outer close tag -->	
+	</div> <!-- container close tag -->
 </body>
 </html>
