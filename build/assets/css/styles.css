@@ -1536,7 +1536,8 @@ button, input {
   margin-right: 50px; }
 
 .request-form {
-  font-size: 14px; }
+  font-size: 14px;
+  display: block; }
 
 .request-title {
   margin-bottom: 30px;
@@ -1595,12 +1596,21 @@ button, input {
   box-sizing: border-box; }
 
 .icon-border {
+  position: relative;
   width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 1px solid #e6e6e6;
   margin: 0 auto;
   margin-bottom: 30px; }
+
+.icon-checked {
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 26px;
+  font-size: 40px;
+  color: #8bc34a; }
 
 .request-sent__title {
   margin-bottom: 5px; }
