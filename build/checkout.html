@@ -105,6 +105,13 @@
 							<img alt="Ruges Logo">
 						</a>
 					</div>
+					<button class="middle-header__hamb-menu">
+						<span class="middle-header__hamb-menu-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+							    <path fill="gray" fill-rule="evenodd" d="M-.002 15.999v-2h24.001v2H-.002zm0-9h24.001v2H-.002v-2zm0-7h24.001v2H-.002v-2z"/>
+							</svg>
+						</span>
+					</button>
 					<form name="search" method="post" class="lower-header-form">
 						<div class="lower-header-form__icon">
 							<svg 
@@ -158,66 +165,7 @@
 		
 		<section class="checkout__wrap registration__wrap clearfix">
 			<div class="container">
-				<form action="post" class="checkout__form registration__form clearfix">
-					<div class="checkout__title registration__title">
-						<span class="checkout__title-text registration__title-text">
-							ОФОРМЛЕНИЕ ЗАКАЗА
-						</span>
-					</div>
-					<div class="checkout__subtitle">
-						<div class="checkout__subtitle-text">
-							Ваши контактные данные
-						</div>
-						<div class="checkout__subtitle-decor"></div>
-					</div>
-					<div class="registration__field-wrap clearfix">
-						<label for="name" class="registration__name-label registration__label asterisk">
-							ФИО
-						</label>
-						<input type="text" id="name" class="registration__name-input registration__input">
-					</div>
-					<div class="registration__field-wrap clearfix">
-						<label for="telnumber" class="registration__tel-num-label registration__label asterisk">
-							Телефон
-						</label>
-						<input type="tel" id="telnumber" class="registration__tel-num-input registration__input" placeholder="+7(099)123-45-67">
-					</div>
-					<div class="registration__field-wrap clearfix">
-						<label for="email" class="registration__email-label registration__label asterisk">
-							E-mail
-						</label>
-						<input type="email" id="email" class="registration__email-input registration__input">
-					</div>
-					<div class="checkout__subtitle">
-						<div class="checkout__subtitle-text">
-							Адрес доставки
-						</div>
-						<div class="checkout__subtitle-decor checkout__subtitle-decor2"></div>
-					</div>
-					<div class="registration__field-wrap clearfix">
-						<label for="city" class="checkout__city-label registration__label asterisk">
-							Город
-						</label>
-						<input type="text" id="city" class="checkout__city-input registration__input" placeholder="+7(099)123-45-67">
-					</div>
-					<div class="registration__field-wrap clearfix">
-						<label for="comment" class="checkout__comment-label registration__label">
-							Комментарий
-						</label>
-						<input type="text" id="comment" class="checkout__comment-input registration__input">
-					</div>
-
-					<div class="registration__field-wrap clearfix">
-						<input type="submit" id="checkout_submit" class="registration__submit checkout__submit" value="Подтвердить заказ">
-					</div>
-					<div class="checkout__warning">
-						* Поля, отмеченные звездочкой, обязательны к заполнению
-					</div>
-				</form>
-
-<!-- ~~~~~~ BASKET ~~~~~~ -->
-
-				<article class="checkout__basket">
+				<article class="checkout__basket clearfix">
 					<div class="checkout__basket-title clearfix">
 						<div class="checkout__basket-title-text">
 							В КОРЗИНЕ
@@ -237,6 +185,182 @@
 							</a>
 						</div>
 					</div>
+
+<!-- "В корзине" нумерованный список НАЧАЛО -->
+					<ol class="checkout__basket-ordered-list">
+						<li class="checkout__basket-ordered-item">
+							<div class="checkout__basket-ordered-img-wrap">
+								<img src="../build/assets/images/item2_002.jpg" alt="Item image" class="checkout__basket-ordered-img">
+							</div>
+							<div class="checkout__basket-ordered-title">
+								<a href="#" class="checkout__basket-ordered-title-link">
+									<p class="checkout__basket-ordered-title-p">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit suscipit repellat aspernatur eum architecto omnis amet eos
+									</p>
+								</a>
+							</div>
+							<div class="checkout__basket-price">
+								<span class="checkout__basket-price-num">
+									230
+								</span>
+								<span class="checkout__basket-price-currency">
+									р.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter checkout__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+								<div class="popular-products-item__quantity-counter-num checkout__quantity-counter-num">
+									253 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="checkout__basket-total-price">
+								<span class="checkout__basket-total-price-num">
+									58190
+								</span>
+								<span class="checkout__basket-total-price-currency">
+									р.
+								</span>
+							</div>
+							<button id="delete-btn" class="checkout__basket-delete-btn">
+								Удалить
+							</button>
+						</li>
+						<li class="checkout__basket-ordered-item">
+							<div class="checkout__basket-ordered-img-wrap">
+								<img src="../build/assets/images/item2_002.jpg" alt="Item image" class="checkout__basket-ordered-img">
+							</div>
+							<div class="checkout__basket-ordered-title">
+								<a href="#" class="checkout__basket-ordered-title-link">
+									<p class="checkout__basket-ordered-title-p">
+										Держатель для смартфона "Сусанин"
+									</p>
+								</a>
+							</div>
+							<div class="checkout__basket-price">
+								<span class="checkout__basket-price-num">
+									1230
+								</span>
+								<span class="checkout__basket-price-currency">
+									р.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter checkout__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+								<div class="popular-products-item__quantity-counter-num checkout__quantity-counter-num">
+									5 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="checkout__basket-total-price">
+								<span class="checkout__basket-total-price-num">
+									6150
+								</span>
+								<span class="checkout__basket-total-price-currency">
+									р.
+								</span>
+							</div>
+							<button id="delete-btn" class="checkout__basket-delete-btn">
+								Удалить
+							</button>
+						</li>
+						<li class="checkout__basket-ordered-item">
+							<div class="checkout__basket-ordered-img-wrap">
+								<img src="../build/assets/images/item2_002.jpg" alt="Item image" class="checkout__basket-ordered-img">
+							</div>
+							<div class="checkout__basket-ordered-title">
+								<a href="#" class="checkout__basket-ordered-title-link">
+									<p class="checkout__basket-ordered-title-p">
+										Держатель для смартфона
+									</p>
+								</a>
+							</div>
+							<div class="checkout__basket-price">
+								<span class="checkout__basket-price-num">
+									80
+								</span>
+								<span class="checkout__basket-price-currency">
+									р.
+								</span>
+							</div>
+							<div class="popular-products-item__quantity-counter checkout__quantity-counter">
+								<button class="popular-products-item__quantity-counter-minus">−</button>
+								<div class="popular-products-item__quantity-counter-num checkout__quantity-counter-num">
+									1000 шт
+								</div>
+								<button class="popular-products-item__quantity-counter-plus">+</button>
+							</div>
+							<div class="checkout__basket-total-price">
+								<span class="checkout__basket-total-price-num">
+									80000
+								</span>
+								<span class="checkout__basket-total-price-currency">
+									р.
+								</span>
+							</div>
+							<button id="delete-btn" class="checkout__basket-delete-btn">
+								Удалить
+							</button>
+						</li>
+					</ol>
+
+<!-- "В корзине ПОДАРКИ" список НАЧАЛО -->
+					<div class="gift-list-wrapper clearfix">
+						<span class="gift__title">
+							+Подарки
+						</span>
+						<ul class="checkout__gift-list">
+							<li class="checkout__gift-item">
+								<div class="checkout__basket-ordered-img-wrap">
+									<img src="../build/assets/images/gift_01.jpg" alt="Item image" class="checkout__basket-ordered-img">
+								</div>
+								<div class="checkout__basket-ordered-title">
+									<a href="#" class="checkout__basket-ordered-title-link">
+										<p class="checkout__basket-ordered-title-p">
+											Столик раскладной "Фантом"
+										</p>
+									</a>
+								</div>
+							</li>
+						</ul>
+						<div class="sum-btn-wrap clearfix">
+							<div class="sum-wrap">
+								<div class="checkout__basket-delivery clearfix">
+									<span class="checkout__basket-delivery-sum-text">
+										Сумма доставки:
+									</span>
+									<div class="checkout__basket-order-sum-wrap">
+										<span class="checkout__basket-delivery-sum">
+											650
+										</span>
+										<span class="checkout__basket-delivery-sum-currency">
+											р.
+										</span>
+									</div>
+								</div>
+								<div class="checkout__sum-btn-wrap clearfix">
+									<div class="checkout__basket-total clearfix">
+										<span class="checkout__basket-total-sum-text">
+											Сумма к оплате:
+										</span>
+										<div class="checkout__basket-order-sum-wrap">
+											<span class="checkout__basket-total-sum">
+												1100
+											</span>
+											<span class="checkout__basket-total-sum-currency">
+												р.
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button id="make-order-btn" class="checkout__make-order-btn registration__submit">
+								Оформить заказ
+							</button>
+						</div>	
+					</div> <!-- gift list wrapper -->			
+<!-- КОНЕЦ Раздела "В корзине ПОДАРКИ" список -->
+
 					<ul class="checkout__basket-list">
 						<li class="checkout__basket-item">
 							<div class="checkout__basket-item-pic" style="background-image: URL(../build/assets/images/item2_002.jpg)">
@@ -342,6 +466,62 @@
 						</div>
 					</div>
 				</article>
+				<form action="post" class="checkout__form registration__form clearfix">
+					<div class="checkout__title registration__title">
+						<span class="checkout__title-text registration__title-text">
+							ОФОРМЛЕНИЕ ЗАКАЗА
+						</span>
+					</div>
+					<div class="checkout__subtitle">
+						<div class="checkout__subtitle-text">
+							Ваши контактные данные
+						</div>
+						<div class="checkout__subtitle-decor"></div>
+					</div>
+					<div class="checkout__field-wrap clearfix">
+						<label for="name" class="registration__name-label registration__label asterisk">
+							ФИО
+						</label>
+						<input type="text" id="name" class="registration__name-input registration__input">
+					</div>
+					<div class="checkout__field-wrap clearfix">
+						<label for="telnumber" class="registration__tel-num-label registration__label asterisk">
+							Телефон
+						</label>
+						<input type="tel" id="telnumber" class="registration__tel-num-input registration__input" placeholder="+7(099)123-45-67">
+					</div>
+					<div class="checkout__field-wrap clearfix">
+						<label for="email" class="registration__email-label registration__label asterisk">
+							E-mail
+						</label>
+						<input type="email" id="email" class="registration__email-input registration__input">
+					</div>
+					<div class="checkout__subtitle">
+						<div class="checkout__subtitle-text">
+							Адрес доставки
+						</div>
+						<div class="checkout__subtitle-decor checkout__subtitle-decor2"></div>
+					</div>
+					<div class="checkout__field-wrap clearfix">
+						<label for="city" class="checkout__city-label registration__label asterisk">
+							Город
+						</label>
+						<input type="text" id="city" class="checkout__city-input registration__input" placeholder="+7(099)123-45-67">
+					</div>
+					<div class="checkout__field-wrap clearfix">
+						<label for="comment" class="checkout__comment-label registration__label">
+							Комментарий
+						</label>
+						<input type="text" id="comment" class="checkout__comment-input registration__input">
+					</div>
+
+					<div class="checkout__field-wrap clearfix">
+						<input type="submit" id="checkout_submit" class="registration__submit checkout__submit" value="Подтвердить заказ">
+					</div>
+					<div class="checkout__warning">
+						* Поля, отмеченные звездочкой, обязательны к заполнению
+					</div>
+				</form>	
 			</div>
 		</section>
 	</div>
