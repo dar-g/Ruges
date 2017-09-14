@@ -225,7 +225,7 @@ button, input {
   background-color: #ffffff;
   border: solid 1px #e6e6e6;
   box-sizing: border-box;
-  padding: 15px 57px; }
+  padding: 0 0 0 57px; }
 
 .input-search-btn, .basket {
   height: 50px;
