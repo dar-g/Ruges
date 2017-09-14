@@ -1,4 +1,4 @@
-.request-outer{
+.popup-outer{
 	position: absolute;
     top: 0;
     left: 0;
@@ -6,17 +6,19 @@
     bottom: 0;
     text-align: center;
 }
-.request-outer:before{
+.popup-outer:before{
     content: "";
     height: 100%;
     width: 0px;
     display: inline-block;
     vertical-align: middle;
 }
-.request-wrap{
+.popup-wrap{
 	position: relative;
     display: inline-block;
     vertical-align: middle;
+}
+.request-wrap{
 	width: 550px;
 	height: 552px;
 	padding: 30px;
