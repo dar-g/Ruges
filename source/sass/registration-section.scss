@@ -1,19 +1,19 @@
 .registration__wrap{
 	border-top: 1px solid $white-three;
-	padding: 40px 0;
+	padding: 38px 0;
 }
 .registration__form{
 	width: 580px;
 	margin: 0 auto;
 }
 .registration__title{
-	margin-bottom: 15px;
+	margin-bottom: 32px;
 }
 .registration__title-text{
 	font-size: 20px;
 }
 .registration__type{
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     border-bottom: 1px solid $white-three;	
 }
 .registration__type-list{
@@ -32,7 +32,7 @@
 }
 .registration__field-wrap{
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .registration__field-wrap_required{
 	margin-bottom: 20px;
@@ -44,6 +44,7 @@
 	color: $tomato;
 	font-size: 12px;
 	line-height: 14px;
+	margin-bottom: -13px;
 }
 .registration__label{
 	float: left;
@@ -61,6 +62,7 @@
 .registration__category-title{
 	display: inline-block;
 	vertical-align: middle;
+	line-height: 40px;
 	color: $warm-grey;
 	padding-right: 5px;
 }
@@ -104,6 +106,7 @@
 	float: right;
 	border-style: none;
 	background-color: transparent;
+    margin-top: -8px;
 }
 .copy-payer-data-text, .copy-payer-data-arrow{
 	color: $booger;

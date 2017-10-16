@@ -228,7 +228,7 @@
 
 .popular-products-list{
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 18px;
 }
 .popular-products-title{
 	margin: 26px 0;
@@ -246,10 +246,10 @@
 	background-color: $white;
 	border: solid 1px $white-three;
 	padding: 0 20px 20px 17px;
-	margin: 0 12px 12px 0;
+	margin: 0 11px 12px 0;
 }
 .popular-products-item:nth-child(4){
-	margin-left: 0;
+	margin-right: 0;
 }
 .popular-products-item-container{
 	position: relative;
@@ -267,7 +267,7 @@
 }
 .popular-products-item__title{
 	position: absolute;
-	top: 0;
+	top: 3px;
 	width: 250px;
 }
 .popular-products__quick-view:hover .popular-products__quick-view-btn{
@@ -306,7 +306,7 @@
 }
 .popular-products-item__price{
 	position: relative;
-    bottom: -32px;
+    bottom: -43px;
     width: 112px;
 	.popular-products-item__price-p{
 		font-size: 20px;
@@ -315,7 +315,7 @@
 }
 .popular-products-item__delivery{
     position: relative;
-    bottom: -30px;
+    bottom: -40px;
 }
 .popular-products-item__delivery-icon{
 	display: inline-block;

@@ -15,9 +15,12 @@
 	display: none;
 }
 
-.lower-header-elem .logo-link{
+.logo-link_shorter{
+	display: block;
 	width: 140px;
-	margin-right: 11px;
+	height: 50px;
+    background-color: #e6e6e6;
+    margin-right: 13px;
 }
 
 .middle-header__hamb-menu{
@@ -27,15 +30,15 @@
 	border-radius: 3px;
 	background-color: $white;
 	border: solid 1px $white-three;
-	margin-right: 15px;
+	margin-right: 11px;
     box-sizing: border-box;
     padding: 16px 10px;
 }
 .middle-header__hamb-menu-icon{
 	display: block;
     position: relative;
-    top: 1px;
-    right: 3px;
+    top: 0;
+    right: 6px;
 }
 .middle-header__hamb-menu-icon{
 	margin-right: 5px;
@@ -45,7 +48,7 @@
 	display: block;
 	position: relative;
     top: -16px;
-    right: -38px;
+    right: -40px;
     width: 6px;
     height: 6px;
     transform: rotate(-45deg);
@@ -56,10 +59,11 @@
 .lowest-header{
 	min-height: 40px;
 }
-.header-breadcrumbs, .header-breadcrumbs-list, .header-breadcrumbs__item, .item-assessment, .stars-wrap, .article-review, .article-share{
+.header-breadcrumbs__item, .stars-wrap, .article-review, .article-share{
 	display: inline-block;
 }
 .header-breadcrumbs{
+	float: left;
 	max-width: 865px;
 }
 .header-breadcrumbs__item{
@@ -89,7 +93,7 @@
 }
 .rating {
 	overflow: hidden;
-	vertical-align: bottom;
+	vertical-align: top;
 	display: inline-block;
 	width: auto;
 	height: 15px;
@@ -126,7 +130,7 @@
 }
 
 .article-review{
-	margin-right: 15px;
+	margin-right: 10px;
 }
 .article-review__icon{
 	margin-right: 3px;

@@ -84,10 +84,15 @@
 	float: right;
 	width: 595px;
 }
+.article-descr__title{
+	margin-top: -22px;
+	-webkit-margin-after: 5px;
+}
 .article-descr__title-p{
 	font-family: $bold;
 	font-size: 20px;
 	color: $black;
+	-webkit-margin-after: 12px;
 }
 .article-number__text{
 	font-size: 14px;
@@ -99,7 +104,7 @@
 
 .article__inner-staff-wrap{
 	width: 325px;
-	margin-bottom: 45px;
+	margin-bottom: 64px;
 }
 .article-descr__price, .article-descr__delivery-btn, .article__quantity-counter, .article__to-buy{
 	display: inline-block;
@@ -107,19 +112,23 @@
 .article-descr__price{
 	position: static;
 	max-width: 80px;
+    margin-right: 6px;
 }
 .article-descr__price-p{
 	font-family: $bold;
 	font-size: 30px;
+	-webkit-margin-before: 12px;
+	-webkit-margin-after: 12px;
 }
 .article-descr__delivery-btn{
-	width: 217px;
+	width: 222px;
 	height: 24px;
 	border-radius: 3px;
 	background-color: $white-two;
 	text-align: center;
 	box-sizing: border-box;
 	border: none;
+	vertical-align: super;
 }
 .popular-products-item__delivery-icon{
 	display: inline-block;
@@ -131,6 +140,7 @@
 .popular-products-item__delivery-text{
 	display: inline-block;
 	vertical-align: middle;
+	line-height: 24px;
 }
 .article__quantity-counter, .article__to-buy-btn{
 	position: static;
@@ -161,7 +171,7 @@
 }
 .article-description-titles__link_active{
 	border-bottom: 2px solid $booger;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     z-index: 1000;
 }
 .article-description__item{
