@@ -169,7 +169,7 @@
 <!-- PROFILE SECTION START HERE -->
 
 
-	<section class="profile-section">
+	<section class="profile-section clearfix">
 		<div class="container">
 
 <!-- SIDEBAR -->
@@ -179,7 +179,7 @@
 				</div>
 				<div class="profile-sidebar__menu">
 					<ul class="profile-sidebar__menu-list">
-						<li class="profile-sidebar__menu-list-item">
+						<li class="profile-sidebar__menu-list-item profile-sidebar__menu-list-item_active">
 							<a href="#" class="profile-sidebar__menu-link">
 								История заказов
 							</a>
@@ -200,17 +200,17 @@
 						<span class="filter__text">
 						Заказы:
 						</span>
-						<label for="from" class="filter__label-from">
+						<label for="from" class="filter__label-from filter__label">
 							с
 						</label>
-						<input type="text" id="to" class="filter__input-from" placeholder="03-07-2017">
-						<label for="to" class="filter__label-to">
+						<input type="text" id="to" class="filter__input-from filter__input" placeholder="03-07-2017">
+						<label for="to" class="filter__label-to filter__label">
 							по
 						</label>
-						<input type="text" id="to" class="filter__input-to" placeholder="03-07-2017">
+						<input type="text" id="to" class="filter__input-to filter__input" placeholder="03-07-2017">
 					</div>
 					<div class="filter-order-wrap">
-						<label for="filter-order">
+						<label for="filter-order" class="filter-order__label">
 							Статус:
 						</label>
 						<select name="filter-order" id="filter-order" class="filter-order-select">
@@ -229,22 +229,88 @@
 
 <!-- CONTENT TO FILTER -->
 				<div class="profile-content-wrap">
-					<ol class="profile-content__list">
+					<ul class="profile-content__list">
 						<li class="profile-content__list-item">
-							<div class="profile-content__list-item-date">
+							<div class="profile-content__list-item-number profile-content__list-item_inline">
+								4
+							</div>
+							<div class="profile-content__list-item-date profile-content__list-item_inline">
 								31 мая 2017
 							</div>
-							<div class="profile-content__list-item-price">
+							<div class="profile-content__list-item-price profile-content__list-item_inline">
 								7007.00 р.
 							</div>
-							<div class="profile-content__list-item-shopping-method">
+							<div class="profile-content__list-item-shopping-method profile-content__list-item_inline">
 								Опт
 							</div>
-							<div class="profile-content__list-item-order-status">
+							<div class="profile-content__list-item-quantity profile-content__list-item_inline">
+								50 шт
+							</div>
+							<div class="profile-content__list-item-order-status profile-content__list-item_inline">
 								Новый
 							</div>
 						</li>
-					</ol>
+						<li class="profile-content__list-item">
+							<div class="profile-content__list-item-number profile-content__list-item_inline">
+								10
+							</div>
+							<div class="profile-content__list-item-date profile-content__list-item_inline">
+								11 мая 2017
+							</div>
+							<div class="profile-content__list-item-price profile-content__list-item_inline">
+								8439.00 р.
+							</div>
+							<div class="profile-content__list-item-shopping-method profile-content__list-item_inline">
+								Опт
+							</div>
+							<div class="profile-content__list-item-quantity profile-content__list-item_inline">
+								25 шт
+							</div>
+							<div class="profile-content__list-item-order-status profile-content__list-item_inline">
+								Новый
+							</div>
+						</li>
+						<li class="profile-content__list-item">
+							<div class="profile-content__list-item-number profile-content__list-item_inline">
+								11
+							</div>
+							<div class="profile-content__list-item-date profile-content__list-item_inline">
+								6 апреля 2017
+							</div>
+							<div class="profile-content__list-item-price profile-content__list-item_inline">
+								8135.45 р.
+							</div>
+							<div class="profile-content__list-item-shopping-method profile-content__list-item_inline">
+								Дропшиппинг
+							</div>
+							<div class="profile-content__list-item-quantity profile-content__list-item_inline">
+								545 шт
+							</div>
+							<div class="profile-content__list-item-order-status profile-content__list-item_inline">
+								Предобработка
+							</div>
+						</li>
+						<li class="profile-content__list-item">
+							<div class="profile-content__list-item-number profile-content__list-item_inline">
+								12
+							</div>
+							<div class="profile-content__list-item-date profile-content__list-item_inline">
+								1 апреля 2017
+							</div>
+							<div class="profile-content__list-item-price profile-content__list-item_inline">
+								7007.00 р.
+							</div>
+							<div class="profile-content__list-item-shopping-method profile-content__list-item_inline">
+								Опт
+							</div>
+							<div class="profile-content__list-item-quantity profile-content__list-item_inline">
+								100 шт
+							</div>
+							<div class="profile-content__list-item-order-status profile-content__list-item_inline">
+								Новый
+							</div>
+						</li>
+					</ul>
 				</div>
 			</article>	
 		</div>
