@@ -1838,6 +1838,10 @@ button, input {
   background-color: #9CCC65;
   transition: background-color 0.3s; }
 
+.profile-section {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 24px; }
+
 .profile-sidebar {
   float: left;
   min-width: 290px;
@@ -1866,11 +1870,13 @@ button, input {
   color: #1a1a1a; }
 
 .profile-content {
+  /*display: none;*/
   float: left;
   width: 900px;
   margin-bottom: 60px; }
 
 .filter-wrap {
+  margin-top: -7px;
   margin-bottom: 20px; }
 
 .filter-date, .filter-order-wrap {
@@ -1917,4 +1923,53 @@ button, input {
   display: inline-block; }
 
 .profile-content__list-item-number {
-  margin-right: 75px; }
+  margin-right: 55px; }
+
+.profile-content__list-item-date, .profile-content__list-item-price, .profile-content__list-item-shopping-method {
+  width: 175px;
+  text-align: center; }
+
+.profile-content__list-item-quantity {
+  width: 130px;
+  text-align: center; }
+
+.profile-content__list-item-order-status {
+  width: 110px;
+  text-align: center; }
+
+/*     FILES style      */
+.profile-files {
+  padding-top: 50px; }
+
+.profile-files__list {
+  margin-bottom: 30px; }
+
+.profile-files__list-item {
+  width: 288px;
+  height: 200px;
+  display: inline-block;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  margin-right: 12px;
+  box-sizing: border-box; }
+
+.profile-files__list-item:before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: ""; }
+
+.profile-files__list-item-link {
+  display: inline-block;
+  vertical-align: middle; }
+
+.profile-files__list-item:nth-child(3) {
+  margin-right: 0; }
+
+.profile-files__list-item-title {
+  color: #1a1a1a;
+  font-size: 18px; }
+
+.profile-files__list-item-size {
+  color: #808080;
+  font-size: 16px; }
