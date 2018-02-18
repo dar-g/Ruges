@@ -1973,3 +1973,23 @@ button, input {
 .profile-files__list-item-size {
   color: #808080;
   font-size: 16px; }
+
+.section-search {
+  border-top: 1px solid #e6e6e6;
+  padding: 20px 0 0; }
+
+.search-wrap {
+  /*display: none;*/
+  margin-bottom: 30px; }
+
+.search-text__result {
+  font-weight: bold; }
+
+/*SEARCH ZERO*/
+.short-message-center {
+  width: 400px;
+  margin: 150px auto;
+  text-align: center; }
+
+.search-zero-text {
+  font-size: 22px; }
