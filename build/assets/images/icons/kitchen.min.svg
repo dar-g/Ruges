@@ -1,0 +1,4 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>kitchen</title>
+	<defs><rect id="a" x="21" y="7" width="3" height="4" rx="1"/></defs><g fill="none" fill-rule="evenodd"><circle stroke="#1A1A1A" cx="12" cy="12" r="7"/><circle stroke="#1A1A1A" cx="12" cy="12" r="4"/><path d="M1.5 17.5v-6M22.5 17.5v-8" stroke="#1A1A1A" stroke-linecap="square"/><path d="M1.5 6.585V11.5H2a.5.5 0 0 0 .5-.5V8a1.5 1.5 0 0 0-1-1.415z" stroke="#1A1A1A"/><use fill="#1A1A1A" xlink:href="#a"/><rect stroke="#1A1A1A" x="21.5" y="7.5" width="2" height="3" rx="1"/></g>
+</svg>

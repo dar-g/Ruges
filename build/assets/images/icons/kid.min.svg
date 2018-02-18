@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	<title>kid</title>
+	<g stroke="#1A1A1A" fill="none" fill-rule="evenodd">
+		<path d="M10.472 2.853c1.215.586 2.12 1.174 2.718 1.763.895.884.953 2.514-.254 3.59-1.207 1.077-2.956-.01-3.014-1.176-.04-.778.43-1.288 1.405-1.53" stroke-linecap="square"/>
+		<path d="M12 2.5A7.5 7.5 0 0 0 4.5 10v5a5.5 5.5 0 0 0 5.5 5.5h4a5.5 5.5 0 0 0 5.5-5.5v-5A7.5 7.5 0 0 0 12 2.5zM19.5 16a2.5 2.5 0 0 0 0-5v5zM4.5 16a2.5 2.5 0 0 1 0-5v5z"/>
+		<path d="M9.5 15.5c.824.667 1.653 1 2.487 1 .834 0 1.672-.333 2.513-1" stroke-linecap="square"/>
+		<circle cx="8" cy="13" r="1"/><circle cx="16" cy="13" r="1"/>
+</g>
+</svg>
